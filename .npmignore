@@ -1,0 +1,5 @@
+.npmrc
+src
+tsconfig.json
+typedoc.json
+.vscode

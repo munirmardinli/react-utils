@@ -1,0 +1,87 @@
+{
+	"name": "@munirmardinli_org/react-utils",
+	"version": "0.0.1",
+	"private": false,
+	"sideEffects": false,
+	"type": "module",
+	"description": "Reusable React hooks + state management",
+	"keywords": [
+		"Munir Mardinli",
+		"Hooks",
+		"Reusable Components",
+		"Modular Components"
+	],
+	"files": [
+		"lib"
+	],
+	"exports": {
+		".": {
+			"import": "./lib/index.js",
+			"require": "./lib/index.js"
+		}
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"license": "MIT",
+	"homepage": "https://munirmardinli.github.io/react-utils",
+	"bugs": {
+		"url": "https://github.com/munirmardinli/react-utils/issues",
+		"email": "Munir@Mardinli.de"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/munirmardinli/react-utils.git"
+	},
+	"author": {
+		"name": "Munir Mardinli",
+		"email": "Munir@Mardinli.de",
+		"url": "https://linktr.ee/munirmardinli"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://linktr.ee/munirmardinli"
+	},
+	"contributors": [
+		{
+			"name": "Munir Mardinli",
+			"email": "Munir@Mardinli.de",
+			"url": "https://linktr.ee/munirmardinli"
+		}
+	],
+	"scripts": {
+		"npm": "tsc -p tsconfig.npm.json",
+		"husky": "husky install"
+	},
+	"devDependencies": {
+		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/commit-analyzer": "^13.0.1",
+		"@semantic-release/git": "^10.0.1",
+		"@semantic-release/github": "^11.0.3",
+		"@semantic-release/release-notes-generator": "^14.0.3",
+		"@types/react": "^19.1.8",
+		"commitizen": "^4.3.1",
+		"conventional-changelog-conventionalcommits": "^9.0.0",
+		"cz-conventional-changelog": "^3.3.0",
+		"husky": "^9.1.7",
+		"semantic-release": "^24.2.5",
+		"ts-node": "^10.9.2",
+		"typedoc": "^0.28.5",
+		"typescript": "^5.8.3"
+	},
+	"dependencies": {
+		"@mui/material": "^5.15.10",
+		"jwt-decode": "^4.0.0",
+		"next": "^15.2.4",
+		"nookies": "^2.5.2",
+		"react": "^18",
+		"zustand": "^4.5.4"
+	},
+	"tsdocsOptions": {
+		"changelog": true
+	}
+}
