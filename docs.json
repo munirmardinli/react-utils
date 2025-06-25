@@ -1,0 +1,6025 @@
+{
+	"schemaVersion": "2.0",
+	"id": 0,
+	"name": "react-utils",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 1,
+			"name": "hooks/useAuthHook",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 2,
+					"name": "useAuthHook",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/hooks/useAuthHook.ts",
+							"line": 32,
+							"character": 13,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useAuthHook.ts#L32"
+						}
+					],
+					"signatures": [
+						{
+							"id": 3,
+							"name": "useAuthHook",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Custom hook for handling authentication state and token validation."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "An object containing:\n  - user: The authenticated user object or null\n  - isLoading: Boolean indicating if auth check is in progress\n  - error: Error object if authentication failed"
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\n// Basic usage\nconst { user, isLoading, error } = useAuthHook();\n```"
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\n// With TypeScript generics for custom user type\ninterface CustomUser extends User<{ email: string }> {}\nconst { user } = useAuthHook<CustomUser>();\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "inline-tag",
+												"tag": "@link",
+												"text": "AuthHookResult",
+												"target": 50
+											},
+											{
+												"kind": "text",
+												"text": " for return type structure"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											},
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "inline-tag",
+												"tag": "@link",
+												"text": "User",
+												"target": 41
+											},
+											{
+												"kind": "text",
+												"text": " for base user type that can be extended"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/hooks/useAuthHook.ts",
+									"line": 32,
+									"character": 27,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useAuthHook.ts#L32"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 50,
+								"name": "AuthHookResult",
+								"package": "@munirmardinli_org/react-utils",
+								"qualifiedName": "__global.AuthHookResult"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"children": [
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/hooks/useAuthHook.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useAuthHook.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "hooks/useBreakpoint",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 5,
+					"name": "useBreakpoint",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/hooks/useBreakpoint.ts",
+							"line": 36,
+							"character": 16,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useBreakpoint.ts#L36"
+						}
+					],
+					"signatures": [
+						{
+							"id": 6,
+							"name": "useBreakpoint",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Custom hook to track and respond to viewport breakpoint changes.\nProvides responsive design information based on window width."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "An object containing:\n  - isMobile: boolean (width < 768px)\n  - isTablet: boolean (768px ≤ width < 1024px)\n  - isDesktop: boolean (width ≥ 1024px)\n  - current: Breakpoint type ('mobile' | 'tablet' | 'desktop')"
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\n// Basic usage\nconst { isMobile, current } = useBreakpoint();\nif (isMobile) {\n  // Render mobile component\n}\n```"
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\n// Conditional rendering\nconst { current } = useBreakpoint();\nreturn (\n  <div>\n    {current === 'mobile' ? <MobileView /> : <DesktopView />}\n  </div>\n);\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "inline-tag",
+												"tag": "@link",
+												"text": "BreakpointResult",
+												"target": 45
+											},
+											{
+												"kind": "text",
+												"text": " for return type structure"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											},
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "inline-tag",
+												"tag": "@link",
+												"text": "Breakpoint",
+												"target": 140
+											},
+											{
+												"kind": "text",
+												"text": " for available breakpoint values"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/hooks/useBreakpoint.ts",
+									"line": 36,
+									"character": 16,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useBreakpoint.ts#L36"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 45,
+								"name": "BreakpointResult",
+								"package": "@munirmardinli_org/react-utils",
+								"qualifiedName": "__global.BreakpointResult"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"children": [
+						5
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/hooks/useBreakpoint.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useBreakpoint.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 7,
+			"name": "hooks/useLanguageEffect",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 8,
+					"name": "useLanguageEffect",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/hooks/useLanguageEffect.ts",
+							"line": 41,
+							"character": 13,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useLanguageEffect.ts#L41"
+						}
+					],
+					"signatures": [
+						{
+							"id": 9,
+							"name": "useLanguageEffect",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Custom hook for managing language selection and synchronization with cookies/API"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@version",
+										"content": [
+											{
+												"kind": "text",
+												"text": "1.0.0"
+											}
+										]
+									},
+									{
+										"tag": "@description",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Handles language selection persistence by:\n- Fetching translation files from API when language changes\n- Synchronizing language preference with cookies\n- Restoring language preference from cookies on initial load"
+											}
+										]
+									},
+									{
+										"tag": "@requires",
+										"content": [
+											{
+												"kind": "text",
+												"text": "nookies For cookie management"
+											}
+										]
+									},
+									{
+										"tag": "@requires",
+										"content": [
+											{
+												"kind": "text",
+												"text": "changeLanguageStore For global language state management"
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\n// Basic usage in component\nuseLanguageEffect();\n```"
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\n// With custom language store\nconst { languageSelected } = useChangeLanguageStore();\nuseLanguageEffect();\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "inline-tag",
+												"tag": "@link",
+												"text": "changeLanguageStore",
+												"target": 20
+											},
+											{
+												"kind": "text",
+												"text": " For the underlying state management"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											},
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "inline-tag",
+												"tag": "@link",
+												"text": "COOKIE_PATH",
+												"target": 142
+											},
+											{
+												"kind": "text",
+												"text": " For cookie path configuration"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											},
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "inline-tag",
+												"tag": "@link",
+												"text": "MAX_AGE",
+												"target": 141
+											},
+											{
+												"kind": "text",
+												"text": " For cookie expiration setting"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/hooks/useLanguageEffect.ts",
+									"line": 41,
+									"character": 33,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useLanguageEffect.ts#L41"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"children": [
+						8
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/hooks/useLanguageEffect.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useLanguageEffect.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 10,
+			"name": "hooks/usePostRequest",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 11,
+					"name": "usePost",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/hooks/usePostRequest.ts",
+							"line": 50,
+							"character": 13,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/usePostRequest.ts#L50"
+						}
+					],
+					"signatures": [
+						{
+							"id": 12,
+							"name": "usePost",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Custom hook for making POST requests with type safety and state management"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "An object containing:\n  - data: The response data (type T) or null\n  - error: Error message string or null\n  - loading: Boolean indicating request status\n  - sendPostRequest: Function to manually trigger the request"
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\n// Basic usage with automatic execution\nconst { data, loading } = usePost({\n  path: 'users',\n  body: { name: 'John' }\n});\n```"
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\n// Manual execution with custom type\ninterface ApiResponse { id: string; status: string; }\nconst { sendPostRequest } = usePost<ApiResponse>({\n  path: 'orders'\n});\n```"
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\n// Error handling\nconst { error } = usePost({\n  path: 'login',\n  body: credentials\n});\nuseEffect(() => {\n  if (error) showToast(error);\n}, [error]);\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "inline-tag",
+												"tag": "@link",
+												"text": "UsePostParams",
+												"target": 55
+											},
+											{
+												"kind": "text",
+												"text": " for parameter structure"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											},
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "inline-tag",
+												"tag": "@link",
+												"text": "UsePostResult",
+												"target": 58
+											},
+											{
+												"kind": "text",
+												"text": " for return type structure"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/hooks/usePostRequest.ts",
+									"line": 50,
+									"character": 23,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/usePostRequest.ts#L50"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 13,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The expected response type (defaults to User)"
+											}
+										]
+									},
+									"default": {
+										"type": "reference",
+										"target": 41,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": {
+													"packageName": "typescript",
+													"packagePath": "lib/lib.es5.d.ts",
+													"qualifiedName": "Record"
+												},
+												"typeArguments": [
+													{
+														"type": "union",
+														"types": [
+															{
+																"type": "literal",
+																"value": null
+															},
+															{
+																"type": "intrinsic",
+																"name": "string"
+															}
+														]
+													},
+													{
+														"type": "intrinsic",
+														"name": "unknown"
+													}
+												],
+												"name": "Record",
+												"package": "typescript"
+											}
+										],
+										"name": "User",
+										"package": "@munirmardinli_org/react-utils",
+										"qualifiedName": "__global.User"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 14,
+									"name": "params",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Configuration object for the request"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 55,
+										"name": "UsePostParams",
+										"package": "@munirmardinli_org/react-utils",
+										"qualifiedName": "__global.UsePostParams",
+										"highlightedProperties": {
+											"path": [
+												{
+													"kind": "text",
+													"text": "API endpoint path (appended to base URL)"
+												}
+											],
+											"body": [
+												{
+													"kind": "text",
+													"text": "Optional request body to be JSON stringified"
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 58,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 13,
+										"name": "T",
+										"package": "@munirmardinli_org/react-utils",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "UsePostResult",
+								"package": "@munirmardinli_org/react-utils",
+								"qualifiedName": "__global.UsePostResult"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"children": [
+						11
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/hooks/usePostRequest.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/usePostRequest.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 15,
+			"name": "hooks/useThemeFromCookies",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 16,
+					"name": "useThemeFromCookies",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/hooks/useThemeFromCookies.ts",
+							"line": 33,
+							"character": 13,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useThemeFromCookies.ts#L33"
+						}
+					],
+					"signatures": [
+						{
+							"id": 17,
+							"name": "useThemeFromCookies",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Custom hook for synchronizing theme preferences between cookies and application state"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@description",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Manages theme synchronization by:\n- Reading theme preferences from cookies on initial load\n- Applying theme settings to both state manager and DOM\n- Supporting both color mode (light/dark) and high contrast mode"
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\n// Basic usage in component\nuseThemeFromCookies();\n```"
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\n// With theme store access\nconst { mode } = useThemeStore();\nuseThemeFromCookies();\n```"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "inline-tag",
+												"tag": "@link",
+												"text": "useThemeStore",
+												"target": 29
+											},
+											{
+												"kind": "text",
+												"text": " For the underlying theme state management"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											},
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "inline-tag",
+												"tag": "@link",
+												"text": "PaletteMode",
+												"target": {
+													"packageName": "@mui/material",
+													"packagePath": "index.d.ts",
+													"qualifiedName": "PaletteMode"
+												}
+											},
+											{
+												"kind": "text",
+												"text": " For available theme modes"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											},
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "inline-tag",
+												"tag": "@link",
+												"text": "parseCookies",
+												"target": {
+													"packageName": "nookies",
+													"packagePath": "dist/index.d.ts",
+													"qualifiedName": "parseCookies"
+												}
+											},
+											{
+												"kind": "text",
+												"text": " For cookie parsing utility"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/hooks/useThemeFromCookies.ts",
+									"line": 33,
+									"character": 35,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useThemeFromCookies.ts#L33"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"children": [
+						16
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/hooks/useThemeFromCookies.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useThemeFromCookies.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 18,
+			"name": "index",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 170,
+					"name": "AuthHookResult",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 19,
+							"character": 2,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L19"
+						}
+					],
+					"target": 50
+				},
+				{
+					"id": 177,
+					"name": "Breakpoint",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 26,
+							"character": 2,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L26"
+						}
+					],
+					"target": 140
+				},
+				{
+					"id": 169,
+					"name": "BreakpointResult",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 18,
+							"character": 2,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L18"
+						}
+					],
+					"target": 45
+				},
+				{
+					"id": 167,
+					"name": "ChangeLanguage",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 16,
+							"character": 2,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L16"
+						}
+					],
+					"target": 37
+				},
+				{
+					"id": 172,
+					"name": "ChangeLanguageState",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 21,
+							"character": 2,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L21"
+						}
+					],
+					"target": 71
+				},
+				{
+					"id": 154,
+					"name": "changeLanguageStore",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 1,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L1"
+						}
+					],
+					"target": 20
+				},
+				{
+					"id": 166,
+					"name": "COOKIE_PATH",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 13,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L13"
+						}
+					],
+					"target": 145
+				},
+				{
+					"id": 176,
+					"name": "CookieState",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 25,
+							"character": 2,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L25"
+						}
+					],
+					"target": 130
+				},
+				{
+					"id": 171,
+					"name": "DecodedToken",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 20,
+							"character": 2,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L20"
+						}
+					],
+					"target": 66
+				},
+				{
+					"id": 165,
+					"name": "MAX_AGE",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 12,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L12"
+						}
+					],
+					"target": 144
+				},
+				{
+					"id": 175,
+					"name": "SelectedLanguageMenuState",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 24,
+							"character": 2,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L24"
+						}
+					],
+					"target": 123
+				},
+				{
+					"id": 174,
+					"name": "SnackbarState",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 23,
+							"character": 2,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L23"
+						}
+					],
+					"target": 108
+				},
+				{
+					"id": 173,
+					"name": "ThemeStore",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 22,
+							"character": 2,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L22"
+						}
+					],
+					"target": 85
+				},
+				{
+					"id": 160,
+					"name": "useAuthHook",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 7,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L7"
+						}
+					],
+					"target": 2
+				},
+				{
+					"id": 161,
+					"name": "useBreakpoint",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 8,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L8"
+						}
+					],
+					"target": 5
+				},
+				{
+					"id": 155,
+					"name": "useChangeLanguageStore",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 2,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L2"
+						}
+					],
+					"target": 21
+				},
+				{
+					"id": 162,
+					"name": "useLanguageEffect",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 9,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L9"
+						}
+					],
+					"target": 8
+				},
+				{
+					"id": 163,
+					"name": "usePost",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 10,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L10"
+						}
+					],
+					"target": 11
+				},
+				{
+					"id": 178,
+					"name": "UsePostParams",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 27,
+							"character": 2,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L27"
+						}
+					],
+					"target": 55
+				},
+				{
+					"id": 179,
+					"name": "UsePostResult",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 28,
+							"character": 2,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L28"
+						}
+					],
+					"target": 58
+				},
+				{
+					"id": 168,
+					"name": "User",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 17,
+							"character": 2,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L17"
+						}
+					],
+					"target": 41
+				},
+				{
+					"id": 159,
+					"name": "useSCookieStore",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 6,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L6"
+						}
+					],
+					"target": 35
+				},
+				{
+					"id": 157,
+					"name": "useSelectedLanguageMenuStore",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 4,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L4"
+						}
+					],
+					"target": 31
+				},
+				{
+					"id": 158,
+					"name": "useSnackStore",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 5,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L5"
+						}
+					],
+					"target": 33
+				},
+				{
+					"id": 164,
+					"name": "useThemeFromCookies",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 11,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L11"
+						}
+					],
+					"target": 16
+				},
+				{
+					"id": 156,
+					"name": "useThemeStore",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 3,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L3"
+						}
+					],
+					"target": 29
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"children": [
+						154,
+						166,
+						165,
+						159,
+						157,
+						158,
+						156
+					]
+				},
+				{
+					"title": "Functions",
+					"children": [
+						160,
+						161,
+						155,
+						162,
+						163,
+						164
+					]
+				},
+				{
+					"title": "Interfaces",
+					"children": [
+						170,
+						169,
+						167,
+						171,
+						178,
+						179,
+						168
+					]
+				},
+				{
+					"title": "Type Aliases",
+					"children": [
+						177,
+						172,
+						176,
+						175,
+						174,
+						173
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 19,
+			"name": "stores/changeLanguageStore",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 20,
+					"name": "changeLanguageStore",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "src/stores/changeLanguageStore.ts",
+							"line": 33,
+							"character": 13,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L33"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "zustand",
+							"packagePath": "middleware/persist.d.ts",
+							"qualifiedName": "Write"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": {
+									"packageName": "zustand",
+									"packagePath": "middleware/devtools.d.ts",
+									"qualifiedName": "WithDevtools"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": {
+											"packageName": "zustand",
+											"packagePath": "vanilla.d.ts",
+											"qualifiedName": "StoreApi"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 71,
+												"name": "ChangeLanguageState",
+												"package": "@munirmardinli_org/react-utils",
+												"qualifiedName": "__global.ChangeLanguageState"
+											}
+										],
+										"name": "StoreApi",
+										"package": "zustand"
+									}
+								],
+								"name": "WithDevtools",
+								"package": "zustand"
+							},
+							{
+								"type": "reference",
+								"target": {
+									"packageName": "zustand",
+									"packagePath": "middleware/persist.d.ts",
+									"qualifiedName": "StorePersist"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 71,
+										"name": "ChangeLanguageState",
+										"package": "@munirmardinli_org/react-utils",
+										"qualifiedName": "__global.ChangeLanguageState"
+									},
+									{
+										"type": "reference",
+										"target": 71,
+										"name": "ChangeLanguageState",
+										"package": "@munirmardinli_org/react-utils",
+										"qualifiedName": "__global.ChangeLanguageState"
+									}
+								],
+								"name": "StorePersist",
+								"package": "zustand"
+							}
+						],
+						"name": "Write",
+						"package": "zustand"
+					},
+					"defaultValue": "..."
+				},
+				{
+					"id": 21,
+					"name": "useChangeLanguageStore",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/stores/changeLanguageStore.ts",
+							"line": 102,
+							"character": 13,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L102"
+						}
+					],
+					"signatures": [
+						{
+							"id": 22,
+							"name": "useChangeLanguageStore",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Hook to access the ChangeLanguageStore in React components"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Selected state slice"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/stores/changeLanguageStore.ts",
+									"line": 102,
+									"character": 38,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L102"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 23,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 24,
+									"name": "selector",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Selector function"
+											}
+										]
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 25,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/stores/changeLanguageStore.ts",
+													"line": 103,
+													"character": 12,
+													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L103"
+												}
+											],
+											"signatures": [
+												{
+													"id": 26,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/stores/changeLanguageStore.ts",
+															"line": 103,
+															"character": 12,
+															"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L103"
+														}
+													],
+													"parameters": [
+														{
+															"id": 27,
+															"name": "state",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reference",
+																"target": 71,
+																"name": "ChangeLanguageState",
+																"package": "@munirmardinli_org/react-utils",
+																"qualifiedName": "__global.ChangeLanguageState"
+															}
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": 23,
+														"name": "T",
+														"package": "@munirmardinli_org/react-utils",
+														"refersToTypeParameter": true
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 23,
+								"name": "T",
+								"package": "@munirmardinli_org/react-utils",
+								"refersToTypeParameter": true
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"children": [
+						20
+					]
+				},
+				{
+					"title": "Functions",
+					"children": [
+						21
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/stores/changeLanguageStore.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 28,
+			"name": "stores/changeModeStore",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 29,
+					"name": "useThemeStore",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "src/stores/changeModeStore.ts",
+							"line": 34,
+							"character": 13,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeModeStore.ts#L34"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "zustand",
+							"packagePath": "react.d.ts",
+							"qualifiedName": "UseBoundStore"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": {
+									"packageName": "zustand",
+									"packagePath": "middleware/persist.d.ts",
+									"qualifiedName": "Write"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": {
+											"packageName": "zustand",
+											"packagePath": "vanilla.d.ts",
+											"qualifiedName": "StoreApi"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 85,
+												"name": "ThemeStore",
+												"package": "@munirmardinli_org/react-utils",
+												"qualifiedName": "__global.ThemeStore"
+											}
+										],
+										"name": "StoreApi",
+										"package": "zustand"
+									},
+									{
+										"type": "reference",
+										"target": {
+											"packageName": "zustand",
+											"packagePath": "middleware/persist.d.ts",
+											"qualifiedName": "StorePersist"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 85,
+												"name": "ThemeStore",
+												"package": "@munirmardinli_org/react-utils",
+												"qualifiedName": "__global.ThemeStore"
+											},
+											{
+												"type": "reference",
+												"target": 85,
+												"name": "ThemeStore",
+												"package": "@munirmardinli_org/react-utils",
+												"qualifiedName": "__global.ThemeStore"
+											}
+										],
+										"name": "StorePersist",
+										"package": "zustand"
+									}
+								],
+								"name": "Write",
+								"package": "zustand"
+							}
+						],
+						"name": "UseBoundStore",
+						"package": "zustand"
+					},
+					"defaultValue": "..."
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"children": [
+						29
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/stores/changeModeStore.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeModeStore.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 30,
+			"name": "stores/selectedLanguageMenuStore",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 31,
+					"name": "useSelectedLanguageMenuStore",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "src/stores/selectedLanguageMenuStore.ts",
+							"line": 25,
+							"character": 13,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/selectedLanguageMenuStore.ts#L25"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "zustand",
+							"packagePath": "react.d.ts",
+							"qualifiedName": "UseBoundStore"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": {
+									"packageName": "zustand",
+									"packagePath": "middleware/persist.d.ts",
+									"qualifiedName": "Write"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": {
+											"packageName": "zustand",
+											"packagePath": "middleware/devtools.d.ts",
+											"qualifiedName": "WithDevtools"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": {
+													"packageName": "zustand",
+													"packagePath": "vanilla.d.ts",
+													"qualifiedName": "StoreApi"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": 123,
+														"name": "SelectedLanguageMenuState",
+														"package": "@munirmardinli_org/react-utils",
+														"qualifiedName": "__global.SelectedLanguageMenuState"
+													}
+												],
+												"name": "StoreApi",
+												"package": "zustand"
+											}
+										],
+										"name": "WithDevtools",
+										"package": "zustand"
+									},
+									{
+										"type": "reference",
+										"target": {
+											"packageName": "zustand",
+											"packagePath": "middleware/persist.d.ts",
+											"qualifiedName": "StorePersist"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 123,
+												"name": "SelectedLanguageMenuState",
+												"package": "@munirmardinli_org/react-utils",
+												"qualifiedName": "__global.SelectedLanguageMenuState"
+											},
+											{
+												"type": "reference",
+												"target": 123,
+												"name": "SelectedLanguageMenuState",
+												"package": "@munirmardinli_org/react-utils",
+												"qualifiedName": "__global.SelectedLanguageMenuState"
+											}
+										],
+										"name": "StorePersist",
+										"package": "zustand"
+									}
+								],
+								"name": "Write",
+								"package": "zustand"
+							}
+						],
+						"name": "UseBoundStore",
+						"package": "zustand"
+					},
+					"defaultValue": "..."
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"children": [
+						31
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/stores/selectedLanguageMenuStore.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/selectedLanguageMenuStore.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 32,
+			"name": "stores/snackbarStore",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 33,
+					"name": "useSnackStore",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "src/stores/snackbarStore.ts",
+							"line": 30,
+							"character": 13,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/snackbarStore.ts#L30"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "zustand",
+							"packagePath": "react.d.ts",
+							"qualifiedName": "UseBoundStore"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": {
+									"packageName": "zustand",
+									"packagePath": "vanilla.d.ts",
+									"qualifiedName": "StoreApi"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 108,
+										"name": "SnackbarState",
+										"package": "@munirmardinli_org/react-utils",
+										"qualifiedName": "__global.SnackbarState"
+									}
+								],
+								"name": "StoreApi",
+								"package": "zustand"
+							}
+						],
+						"name": "UseBoundStore",
+						"package": "zustand"
+					},
+					"defaultValue": "..."
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"children": [
+						33
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/stores/snackbarStore.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/snackbarStore.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 34,
+			"name": "stores/useCookieStore",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 35,
+					"name": "useSCookieStore",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "src/stores/useCookieStore.ts",
+							"line": 28,
+							"character": 13,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/useCookieStore.ts#L28"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "zustand",
+							"packagePath": "react.d.ts",
+							"qualifiedName": "UseBoundStore"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": {
+									"packageName": "zustand",
+									"packagePath": "vanilla.d.ts",
+									"qualifiedName": "StoreApi"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 130,
+										"name": "CookieState",
+										"package": "@munirmardinli_org/react-utils",
+										"qualifiedName": "__global.CookieState"
+									}
+								],
+								"name": "StoreApi",
+								"package": "zustand"
+							}
+						],
+						"name": "UseBoundStore",
+						"package": "zustand"
+					},
+					"defaultValue": "..."
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"children": [
+						35
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/stores/useCookieStore.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/useCookieStore.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 36,
+			"name": "types",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 50,
+					"name": "AuthHookResult",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Authentication hook return type"
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 53,
+							"name": "error",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Error object"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 55,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L55"
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": null
+									},
+									{
+										"type": "reference",
+										"target": {
+											"packageName": "typescript",
+											"packagePath": "lib/lib.es5.d.ts",
+											"qualifiedName": "Error"
+										},
+										"name": "Error",
+										"package": "typescript"
+									}
+								]
+							}
+						},
+						{
+							"id": 52,
+							"name": "isLoading",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Loading state"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 53,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L53"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 51,
+							"name": "user",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Current authenticated user"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 51,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L51"
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": null
+									},
+									{
+										"type": "reference",
+										"target": 54,
+										"name": "T",
+										"package": "@munirmardinli_org/react-utils",
+										"qualifiedName": "__global.AuthHookResult.T",
+										"refersToTypeParameter": true
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								53,
+								52,
+								51
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 49,
+							"character": 11,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L49"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 54,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "User type extending base User interface"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": 41,
+								"name": "User",
+								"package": "@munirmardinli_org/react-utils",
+								"qualifiedName": "__global.User"
+							},
+							"default": {
+								"type": "reference",
+								"target": 41,
+								"name": "User",
+								"package": "@munirmardinli_org/react-utils",
+								"qualifiedName": "__global.User"
+							}
+						}
+					]
+				},
+				{
+					"id": 45,
+					"name": "BreakpointResult",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Responsive breakpoint detection results"
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 49,
+							"name": "current",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Current active breakpoint"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 42,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L42"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 140,
+								"name": "Breakpoint",
+								"package": "@munirmardinli_org/react-utils",
+								"qualifiedName": "__global.Breakpoint"
+							}
+						},
+						{
+							"id": 48,
+							"name": "isDesktop",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Desktop device detection flag"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 40,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L40"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 46,
+							"name": "isMobile",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Mobile device detection flag"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 36,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L36"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 47,
+							"name": "isTablet",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Tablet device detection flag"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 38,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L38"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								49,
+								48,
+								46,
+								47
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 34,
+							"character": 11,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L34"
+						}
+					]
+				},
+				{
+					"id": 37,
+					"name": "ChangeLanguage",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Generic language change handler interface"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 19,
+							"character": 11,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L19"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 38,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Optional generic type for additional properties"
+									}
+								]
+							},
+							"default": {
+								"type": "reference",
+								"target": {
+									"packageName": "typescript",
+									"packagePath": "lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						}
+					],
+					"indexSignatures": [
+						{
+							"id": 39,
+							"name": "__index",
+							"variant": "signature",
+							"kind": 8192,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 20,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L20"
+								}
+							],
+							"parameters": [
+								{
+									"id": 40,
+									"name": "key",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					]
+				},
+				{
+					"id": 66,
+					"name": "DecodedToken",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Decoded JWT token structure"
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 68,
+							"name": "exp",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Expiration timestamp"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 93,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L93"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 69,
+							"name": "iat",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Issued at timestamp"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 95,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L95"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 67,
+							"name": "user",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "User information"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 91,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L91"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 70,
+								"name": "T",
+								"package": "@munirmardinli_org/react-utils",
+								"qualifiedName": "__global.DecodedToken.T",
+								"refersToTypeParameter": true
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								68,
+								69,
+								67
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 89,
+							"character": 11,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L89"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 70,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "User type extending base User interface"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": 41,
+								"name": "User",
+								"package": "@munirmardinli_org/react-utils",
+								"qualifiedName": "__global.User"
+							},
+							"default": {
+								"type": "reference",
+								"target": 41,
+								"name": "User",
+								"package": "@munirmardinli_org/react-utils",
+								"qualifiedName": "__global.User"
+							}
+						}
+					]
+				},
+				{
+					"id": 55,
+					"name": "UsePostParams",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "POST request parameters"
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 56,
+							"name": "path",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "API endpoint path"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 64,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L64"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 57,
+							"name": "body",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Optional request body"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 66,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L66"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								56,
+								57
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 62,
+							"character": 11,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L62"
+						}
+					]
+				},
+				{
+					"id": 58,
+					"name": "UsePostResult",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "POST request results"
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 59,
+							"name": "data",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Response data"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 75,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L75"
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": null
+									},
+									{
+										"type": "reference",
+										"target": 65,
+										"name": "T",
+										"package": "@munirmardinli_org/react-utils",
+										"qualifiedName": "__global.UsePostResult.T",
+										"refersToTypeParameter": true
+									}
+								]
+							}
+						},
+						{
+							"id": 60,
+							"name": "error",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Error message"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 77,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L77"
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": null
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						},
+						{
+							"id": 61,
+							"name": "loading",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Loading state"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 79,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L79"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 62,
+							"name": "sendPostRequest",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Function to trigger POST request"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 81,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L81"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 63,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/types.d.ts",
+											"line": 81,
+											"character": 20,
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L81"
+										}
+									],
+									"signatures": [
+										{
+											"id": 64,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/types.d.ts",
+													"line": 81,
+													"character": 20,
+													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L81"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"packageName": "typescript",
+													"packagePath": "lib/lib.es5.d.ts",
+													"qualifiedName": "Promise"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "void"
+													}
+												],
+												"name": "Promise",
+												"package": "typescript"
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								59,
+								60,
+								61,
+								62
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 73,
+							"character": 11,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L73"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 65,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Response data type"
+									}
+								]
+							},
+							"default": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					]
+				},
+				{
+					"id": 41,
+					"name": "User",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "User profile interface with generic type support"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 27,
+							"character": 11,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L27"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 42,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Optional generic type for user properties"
+									}
+								]
+							},
+							"default": {
+								"type": "reference",
+								"target": {
+									"packageName": "typescript",
+									"packagePath": "lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "literal",
+												"value": null
+											}
+										]
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						}
+					],
+					"indexSignatures": [
+						{
+							"id": 43,
+							"name": "__index",
+							"variant": "signature",
+							"kind": 8192,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 28,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L28"
+								}
+							],
+							"parameters": [
+								{
+									"id": 44,
+									"name": "key",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					]
+				},
+				{
+					"id": 149,
+					"name": "Window",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "A window containing a DOM document; the document property points to the DOM document loaded in that window.\n\n[MDN Reference](https://developer.mozilla.org/docs/Web/API/Window)"
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 151,
+							"name": "COOKIE_PATH",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Cookie path"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 190,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L190"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 150,
+							"name": "MAX_AGE",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Cookie max age in seconds"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 188,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L188"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								151,
+								150
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/typescript/lib/lib.dom.d.ts",
+							"line": 26913,
+							"character": 10
+						},
+						{
+							"fileName": "node_modules/typescript/lib/lib.dom.d.ts",
+							"line": 27176,
+							"character": 12
+						},
+						{
+							"fileName": "node_modules/next/types/global.d.ts",
+							"line": 45,
+							"character": 10
+						},
+						{
+							"fileName": "node_modules/next/dist/client/route-loader.d.ts",
+							"line": 4,
+							"character": 14
+						},
+						{
+							"fileName": "node_modules/next/dist/client/page-loader.d.ts",
+							"line": 5,
+							"character": 14
+						},
+						{
+							"fileName": "node_modules/next/dist/shared/lib/router/router.d.ts",
+							"line": 11,
+							"character": 14
+						},
+						{
+							"fileName": "node_modules/next/dist/shared/lib/loadable.shared-runtime.d.ts",
+							"line": 28,
+							"character": 14
+						},
+						{
+							"fileName": "src/types.d.ts",
+							"line": 186,
+							"character": 11,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L186"
+						}
+					],
+					"indexSignatures": [
+						{
+							"id": 152,
+							"name": "__index",
+							"variant": "signature",
+							"kind": 8192,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "node_modules/typescript/lib/lib.dom.d.ts",
+									"line": 27173,
+									"character": 4
+								}
+							],
+							"parameters": [
+								{
+									"id": 153,
+									"name": "index",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 149,
+								"name": "Window",
+								"package": "typescript"
+							}
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"target": {
+								"packageName": "typescript",
+								"packagePath": "lib/lib.dom.d.ts",
+								"qualifiedName": "EventTarget"
+							},
+							"name": "EventTarget",
+							"package": "typescript"
+						},
+						{
+							"type": "reference",
+							"target": {
+								"packageName": "typescript",
+								"packagePath": "lib/lib.dom.d.ts",
+								"qualifiedName": "AnimationFrameProvider"
+							},
+							"name": "AnimationFrameProvider",
+							"package": "typescript"
+						},
+						{
+							"type": "reference",
+							"target": {
+								"packageName": "typescript",
+								"packagePath": "lib/lib.dom.d.ts",
+								"qualifiedName": "GlobalEventHandlers"
+							},
+							"name": "GlobalEventHandlers",
+							"package": "typescript"
+						},
+						{
+							"type": "reference",
+							"target": {
+								"packageName": "typescript",
+								"packagePath": "lib/lib.dom.d.ts",
+								"qualifiedName": "WindowEventHandlers"
+							},
+							"name": "WindowEventHandlers",
+							"package": "typescript"
+						},
+						{
+							"type": "reference",
+							"target": {
+								"packageName": "typescript",
+								"packagePath": "lib/lib.dom.d.ts",
+								"qualifiedName": "WindowLocalStorage"
+							},
+							"name": "WindowLocalStorage",
+							"package": "typescript"
+						},
+						{
+							"type": "reference",
+							"target": {
+								"packageName": "typescript",
+								"packagePath": "lib/lib.dom.d.ts",
+								"qualifiedName": "WindowOrWorkerGlobalScope"
+							},
+							"name": "WindowOrWorkerGlobalScope",
+							"package": "typescript"
+						},
+						{
+							"type": "reference",
+							"target": {
+								"packageName": "typescript",
+								"packagePath": "lib/lib.dom.d.ts",
+								"qualifiedName": "WindowSessionStorage"
+							},
+							"name": "WindowSessionStorage",
+							"package": "typescript"
+						}
+					]
+				},
+				{
+					"id": 140,
+					"name": "Breakpoint",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Responsive breakpoint types"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 181,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L181"
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "mobile"
+							},
+							{
+								"type": "literal",
+								"value": "tablet"
+							},
+							{
+								"type": "literal",
+								"value": "desktop"
+							}
+						]
+					}
+				},
+				{
+					"id": 71,
+					"name": "ChangeLanguageState",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Language change state and methods"
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 75,
+							"name": "changelanguage",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Language change callback"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 108,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L108"
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"target": 37,
+										"name": "ChangeLanguage",
+										"package": "@munirmardinli_org/react-utils",
+										"qualifiedName": "__global.ChangeLanguage"
+									},
+									{
+										"type": "literal",
+										"value": null
+									}
+								]
+							}
+						},
+						{
+							"id": 74,
+							"name": "languageChangedManually",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Manual change flag"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 106,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L106"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 73,
+							"name": "languageSelected",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Currently selected language"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 104,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L104"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 81,
+							"name": "setChangelanguage",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Set language change callback"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 112,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L112"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 82,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/types.d.ts",
+											"line": 112,
+											"character": 21,
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L112"
+										}
+									],
+									"signatures": [
+										{
+											"id": 83,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"parameters": [
+												{
+													"id": 84,
+													"name": "data",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": 37,
+														"name": "ChangeLanguage",
+														"package": "@munirmardinli_org/react-utils",
+														"qualifiedName": "__global.ChangeLanguage"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 76,
+							"name": "setLanguage",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Set application language"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 110,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L110"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 77,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/types.d.ts",
+											"line": 110,
+											"character": 15,
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L110"
+										}
+									],
+									"signatures": [
+										{
+											"id": 78,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"parameters": [
+												{
+													"id": 79,
+													"name": "lang",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 80,
+													"name": "manually",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isOptional": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "boolean"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								75,
+								74,
+								73,
+								81,
+								76
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 102,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L102"
+						}
+					]
+				},
+				{
+					"id": 130,
+					"name": "CookieState",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Authentication cookie state"
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 132,
+							"name": "authToken",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Current auth token"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 171,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L171"
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "literal",
+										"value": null
+									}
+								]
+							}
+						},
+						{
+							"id": 137,
+							"name": "removeAuthToken",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Remove auth token"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 175,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L175"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 138,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/types.d.ts",
+											"line": 175,
+											"character": 19,
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L175"
+										}
+									],
+									"signatures": [
+										{
+											"id": 139,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 133,
+							"name": "setAuthToken",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Set auth token"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 173,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L173"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 134,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/types.d.ts",
+											"line": 173,
+											"character": 16,
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L173"
+										}
+									],
+									"signatures": [
+										{
+											"id": 135,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"parameters": [
+												{
+													"id": 136,
+													"name": "token",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								132,
+								137,
+								133
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 169,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L169"
+						}
+					]
+				},
+				{
+					"id": 123,
+					"name": "SelectedLanguageMenuState",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Language menu selection state"
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 125,
+							"name": "selectedLanguage",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Currently selected language"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 161,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L161"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 126,
+							"name": "setSelectedLanguage",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Set selected language"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 163,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L163"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 127,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/types.d.ts",
+											"line": 163,
+											"character": 23,
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L163"
+										}
+									],
+									"signatures": [
+										{
+											"id": 128,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"parameters": [
+												{
+													"id": 129,
+													"name": "language",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								125,
+								126
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 159,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L159"
+						}
+					]
+				},
+				{
+					"id": 108,
+					"name": "SnackbarState",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Snackbar notification state"
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 120,
+							"name": "closeSnack",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Hide snackbar"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 153,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L153"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 121,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/types.d.ts",
+											"line": 153,
+											"character": 14,
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L153"
+										}
+									],
+									"signatures": [
+										{
+											"id": 122,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 115,
+							"name": "setSnack",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Show snackbar"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 151,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L151"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 116,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/types.d.ts",
+											"line": 151,
+											"character": 12,
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L151"
+										}
+									],
+									"signatures": [
+										{
+											"id": 117,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"parameters": [
+												{
+													"id": 118,
+													"name": "message",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 119,
+													"name": "severity",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 110,
+							"name": "snack",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Current snackbar state"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 142,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L142"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 111,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 112,
+											"name": "message",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Display message"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/types.d.ts",
+													"line": 144,
+													"character": 3,
+													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L144"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 114,
+											"name": "open",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Visibility state"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/types.d.ts",
+													"line": 148,
+													"character": 3,
+													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L148"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										},
+										{
+											"id": 113,
+											"name": "severity",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Severity level"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "src/types.d.ts",
+													"line": 146,
+													"character": 3,
+													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L146"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												112,
+												114,
+												113
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/types.d.ts",
+											"line": 142,
+											"character": 9,
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L142"
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								120,
+								115,
+								110
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 140,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L140"
+						}
+					]
+				},
+				{
+					"id": 85,
+					"name": "ThemeStore",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Theme management store type"
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 89,
+							"name": "highContrast",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "High contrast mode flag"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 124,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L124"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 88,
+							"name": "language",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Current language"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 122,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L122"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 87,
+							"name": "mode",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Current color mode"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 120,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L120"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"packageName": "@mui/material",
+									"packagePath": "index.d.ts",
+									"qualifiedName": "PaletteMode"
+								},
+								"name": "PaletteMode",
+								"package": "@mui/material"
+							}
+						},
+						{
+							"id": 104,
+							"name": "setHighContrast",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Set high contrast mode"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 134,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L134"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 105,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/types.d.ts",
+											"line": 134,
+											"character": 19,
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L134"
+										}
+									],
+									"signatures": [
+										{
+											"id": 106,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"parameters": [
+												{
+													"id": 107,
+													"name": "highContrast",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "boolean"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 97,
+							"name": "setLanguage",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Set language"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 130,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L130"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 98,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/types.d.ts",
+											"line": 130,
+											"character": 15,
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L130"
+										}
+									],
+									"signatures": [
+										{
+											"id": 99,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"parameters": [
+												{
+													"id": 100,
+													"name": "language",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 93,
+							"name": "setMode",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Set specific color mode"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 128,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L128"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 94,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/types.d.ts",
+											"line": 128,
+											"character": 11,
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L128"
+										}
+									],
+									"signatures": [
+										{
+											"id": 95,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"parameters": [
+												{
+													"id": 96,
+													"name": "mode",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"packageName": "@mui/material",
+															"packagePath": "index.d.ts",
+															"qualifiedName": "PaletteMode"
+														},
+														"name": "PaletteMode",
+														"package": "@mui/material"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 101,
+							"name": "toggleHighContrast",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Toggle high contrast mode"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 132,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L132"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 102,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/types.d.ts",
+											"line": 132,
+											"character": 22,
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L132"
+										}
+									],
+									"signatures": [
+										{
+											"id": 103,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 90,
+							"name": "toggleMode",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Toggle color mode"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/types.d.ts",
+									"line": 126,
+									"character": 2,
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L126"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 91,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/types.d.ts",
+											"line": 126,
+											"character": 14,
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L126"
+										}
+									],
+									"signatures": [
+										{
+											"id": 92,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								89,
+								88,
+								87,
+								104,
+								97,
+								93,
+								101,
+								90
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 118,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L118"
+						}
+					]
+				},
+				{
+					"id": 142,
+					"name": "COOKIE_PATH",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Cookie path ('/')"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 196,
+							"character": 5,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L196"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 141,
+					"name": "MAX_AGE",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Cookie max age in seconds (30 days)"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/types.d.ts",
+							"line": 194,
+							"character": 5,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L194"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 146,
+					"name": "Window",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "node_modules/typescript/lib/lib.dom.d.ts",
+							"line": 26913,
+							"character": 10
+						},
+						{
+							"fileName": "node_modules/typescript/lib/lib.dom.d.ts",
+							"line": 27176,
+							"character": 12
+						},
+						{
+							"fileName": "node_modules/next/types/global.d.ts",
+							"line": 45,
+							"character": 10
+						},
+						{
+							"fileName": "node_modules/next/dist/client/route-loader.d.ts",
+							"line": 4,
+							"character": 14
+						},
+						{
+							"fileName": "node_modules/next/dist/client/page-loader.d.ts",
+							"line": 5,
+							"character": 14
+						},
+						{
+							"fileName": "node_modules/next/dist/shared/lib/router/router.d.ts",
+							"line": 11,
+							"character": 14
+						},
+						{
+							"fileName": "node_modules/next/dist/shared/lib/loadable.shared-runtime.d.ts",
+							"line": 28,
+							"character": 14
+						},
+						{
+							"fileName": "src/types.d.ts",
+							"line": 186,
+							"character": 11,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L186"
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 147,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "node_modules/typescript/lib/lib.dom.d.ts",
+									"line": 27176,
+									"character": 20
+								}
+							],
+							"signatures": [
+								{
+									"id": 148,
+									"name": "Window",
+									"variant": "signature",
+									"kind": 16384,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "node_modules/typescript/lib/lib.dom.d.ts",
+											"line": 27178,
+											"character": 4
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 149,
+										"name": "Window",
+										"package": "typescript"
+									}
+								}
+							]
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"children": [
+						142,
+						141,
+						146
+					]
+				},
+				{
+					"title": "Interfaces",
+					"children": [
+						50,
+						45,
+						37,
+						66,
+						55,
+						58,
+						41,
+						149
+					]
+				},
+				{
+					"title": "Type Aliases",
+					"children": [
+						140,
+						71,
+						130,
+						123,
+						108,
+						85
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.d.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 143,
+			"name": "utils/globals",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 145,
+					"name": "COOKIE_PATH",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {
+						"isConst": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Default cookie path"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@constant",
+								"content": []
+							},
+							{
+								"tag": "@default",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\n'/'\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/utils/globals.ts",
+							"line": 40,
+							"character": 13,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/utils/globals.ts#L40"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "globalThis.COOKIE_PATH"
+				},
+				{
+					"id": 144,
+					"name": "MAX_AGE",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {
+						"isConst": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Default cookie expiration time in seconds"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@constant",
+								"content": []
+							},
+							{
+								"tag": "@default",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\n2592000 (30 days)\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/utils/globals.ts",
+							"line": 33,
+							"character": 13,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/utils/globals.ts#L33"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"defaultValue": "globalThis.MAX_AGE"
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"children": [
+						145,
+						144
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/utils/globals.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/utils/globals.ts#L1"
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"children": [
+				1,
+				4,
+				7,
+				10,
+				15,
+				18,
+				19,
+				28,
+				30,
+				32,
+				34,
+				36,
+				143
+			]
+		}
+	],
+	"packageName": "@munirmardinli_org/react-utils",
+	"packageVersion": "0.0.1",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "# ⚛️ React Utils\n\nA collection of essential React hooks, state management utilities, and helper functions for modern React applications.\n\n[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![GitHub Version](https://img.shields.io/github/package-json/v/munirmardinli/react-utils?color=green&label=version)](https://github.com/munirmardinli/react-utils)\n[![TypeScript](https://img.shields.io/badge/lang-typescript-3178C6.svg)](https://www.typescriptlang.org/)\n[![Docs](https://img.shields.io/badge/docs-typedoc-blueviolet.svg)](https://munirmardinli.github.io/react-utils//)\n[![GitHub Issues](https://img.shields.io/github/issues/munirmardinli/react-utils)](https://github.com/munirmardinli/react-utils/issues)\n[![GitHub Stars](https://img.shields.io/github/stars/munirmardinli/react-utils)](https://github.com/munirmardinli/react-utils/stargazers)\n[![GitHub Forks](https://img.shields.io/github/forks/munirmardinli/react-utils)](https://github.com/munirmardinli/react-utils/network/members)\n\n<a href=\"https://www.buymeacoffee.com/munirmardinli\" target=\"_blank\">\n  <img src=\"https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=munirmardinli&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00\" />\n</a>\n\n## ✨ Features\n\n- **🚀 State Management**: Pre-configured Zustand stores\n- **🔄 Custom Hooks**: Reusable React logic\n- **🛡️ Type Safety**: Full TypeScript support\n- **🌐 SSR Compatible**: Works with Next.js, Remix\n\n## 📦 Installation\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```bash\nnpm install @munirmardinli_org/react-utils\n# or\nyarn add @munirmardinli_org/react-utils\n# or\npnpm add @munirmardinli_org/react-utils\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## 🏗️ Project Structure\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```txt\nsrc/\n├── hooks/          # Custom React hooks (useAuth, useBreakpoint, etc.)\n│   ├── useAuthHook.ts\n│   ├── useBreakpoint.ts\n│   ├── useLanguageEffect.ts\n│   ├── usePostRequest.ts\n│   ├── useThemeFromCookies.ts\n├── stores/\n│   ├── changeLanguageStore.ts\n│   ├── changeModeStore.ts\n│   └── selectedLanguageMenuStore.ts\n│   └── snackbarStore.ts\n│   └── useCookieStore.ts\n├── utils/          # Helper functions\n│   └── globals.ts\n├── types.d.ts      # Type declarations\n└── index.ts        # Public API exports\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## 🔌 Available Stores\n\n1. "
+		},
+		{
+			"kind": "code",
+			"text": "`🎨 useThemeStore`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n   Manages application theme with persistence.\n\n   **Features**:\n\n   - Light/dark mode\n   - High contrast mode support\n   - Synchronization with CSS variables\n\n   "
+		},
+		{
+			"kind": "code",
+			"text": "```tsx\n   const { mode, toggleMode } = useThemeStore();\n\n   // Example usage\n   <button onClick={toggleMode}>\n     Switch to {mode === \"light\" ? \"dark\" : \"light\"} mode\n   </button>;\n   ```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n2. "
+		},
+		{
+			"kind": "code",
+			"text": "`🌐 useLanguageStore`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n   Handles multilingual support with:\n\n   - Language persistence\n   - Automatic cookie management\n   - Theme synchronization\n\n   "
+		},
+		{
+			"kind": "code",
+			"text": "```tsx\n   const { languageSelected, setLanguage } = useChangeLanguageStore();\n   ```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n3. "
+		},
+		{
+			"kind": "code",
+			"text": "`💬 useSnackStore`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n   Global notification system.\n\n   - 4 severity levels "
+		},
+		{
+			"kind": "code",
+			"text": "`(error | warning | success | info)`"
+		},
+		{
+			"kind": "text",
+			"text": "\n   - Auto-dismissal timer\n   - Actionable snackbars\n\n   "
+		},
+		{
+			"kind": "code",
+			"text": "```tsx\n   const { setSnack } = useSnackStore();\n\n   // Basic usage\n   setSnack(\"Profile updated!\", \"success\");\n\n   // With action\n   setSnack({\n     message: \"File deleted\",\n     severity: \"warning\",\n     action: { label: \"Undo\", onClick: handleUndo },\n   });\n   ```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n4. "
+		},
+		{
+			"kind": "code",
+			"text": "`useCookieStore`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n   Secure authentication token management.\n\n   "
+		},
+		{
+			"kind": "code",
+			"text": "```tsx\n   const { authToken, setAuthToken, removeAuthToken } = useCookieStore();\n\n   // Login flow\n   const handleLogin = async () => {\n     const token = await authService.login();\n     setAuthToken(token);\n   };\n\n   // Logout\n   const handleLogout = () => {\n     removeAuthToken();\n   };\n   ```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n5. "
+		},
+		{
+			"kind": "code",
+			"text": "`useChangeLanguageStore`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n   Handles multilingual support with automatic persistence.\n\n   **Features**\n\n   - Language preference cookies\n   - LocalStorage fallback\n   - DevTools integration\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```tsx\nconst { languageSelected, setLanguage } = useChangeLanguageStore();\n\n<select value={languageSelected} onChange={(e) => setLanguage(e.target.value)}>\n  <option value=\"en\">English</option>\n  <option value=\"fr\">Français</option>\n</select>;\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## 🌀 Core Hooks\n\n### useLanguageEffect()\n\nHandles language selection persistence by:\n\n- Fetching translation files from API when language changes\n- Synchronizing language preference with cookies\n- Restoring language preference from cookies on initial load\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```tsx\n// Basic usage:\nuseLanguageEffect();\n\n// With store access:\nconst { languageSelected } = useChangeLanguageStore();\nuseLanguageEffect();\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n### useThemeFromCookies()\n\nManages theme synchronization by:\n\n- Reading theme preferences from cookies on initial load\n- Applying theme settings to both state manager and DOM\n- Supporting both color mode (light/dark) and high contrast mode\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```tsx\n// Basic usage:\nuseThemeFromCookies();\n\n// With store access:\nconst { mode } = useThemeStore();\nuseThemeFromCookies();\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n### useBreakpoint()\n\nResponsive design helper with TypeScript support.\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```tsx\nconst { isMobile, current } = useBreakpoint();\n\nreturn (\n  <div className={isMobile ? \"mobile-layout\" : \"desktop-layout\"}>\n    Current breakpoint: {current}\n  </div>\n);\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n**Return Type:**\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\ntype BreakpointResult {\n  isMobile: boolean;    // width < 768px\n  isTablet: boolean;    // 768px ≤ width < 1024px\n  isDesktop: boolean;   // width ≥ 1024px\n  current: 'mobile' | 'tablet' | 'desktop'; // Current breakpoint\n}\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n### useAuthHook()\n\nJWT authentication with automatic token validation.\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```tsx\nconst { user, isLoading } = useAuthHook();\n\nif (isLoading) return <Spinner />;\nif (!user) return <LoginPage />;\n\nreturn <WelcomeBanner name={user.name} />;\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n**Features:**\n\n- Token expiration checks\n- Custom user type support via generics\n- Loading/error states\n\n### usePost()\n\nType-safe POST requests with built-in state.\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```tsx\n// With auto-execution\nconst { data } = usePost<User>({\n  path: \"/api/users\",\n  body: { name: \"Alice\" },\n});\n\n// Manual execution\nconst { sendPostRequest } = usePost<Product>();\nconst handleSubmit = () =>\n  sendPostRequest({ path: \"/products\", body: product });\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## ⚙️ Configuration\n\nSet environment variables for cookie settings:\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```dotenv\nCOOKIE_MAX_AGE=2592000  # 30 days\nCOOKIE_PATH=/           # Accessible site-wide\nCOOKIE_SAME_SITE=lax    # CSRF protection\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## 🤝 Contributing\n\n1. Fork the repository\n2. Create a feature branch (git checkout -b feature/amazing-feature)\n3. Commit changes (git commit -m 'Add amazing feature')\n4. Push to branch (git push origin feature/amazing-feature)\n5. Open a Pull Request\n\n## 📄 License\n\n**MIT License** © [Munir Mardinli](https://linktr.ee/munirmardinli)\n\n<details>\n<summary>Full License Text</summary>\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```text\nMIT License\n\nCopyright (c) 2025 Munir Mardinli\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n</details>"
+		}
+	],
+	"symbolIdMap": {
+		"1": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/useAuthHook.ts",
+			"qualifiedName": ""
+		},
+		"2": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/useAuthHook.ts",
+			"qualifiedName": "useAuthHook"
+		},
+		"3": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/useAuthHook.ts",
+			"qualifiedName": "useAuthHook"
+		},
+		"4": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/useBreakpoint.ts",
+			"qualifiedName": ""
+		},
+		"5": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/useBreakpoint.ts",
+			"qualifiedName": "useBreakpoint"
+		},
+		"6": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/useBreakpoint.ts",
+			"qualifiedName": "useBreakpoint"
+		},
+		"7": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/useLanguageEffect.ts",
+			"qualifiedName": ""
+		},
+		"8": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/useLanguageEffect.ts",
+			"qualifiedName": "useLanguageEffect"
+		},
+		"9": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/useLanguageEffect.ts",
+			"qualifiedName": "useLanguageEffect"
+		},
+		"10": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/usePostRequest.ts",
+			"qualifiedName": ""
+		},
+		"11": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/usePostRequest.ts",
+			"qualifiedName": "usePost"
+		},
+		"12": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/usePostRequest.ts",
+			"qualifiedName": "usePost"
+		},
+		"13": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/usePostRequest.ts",
+			"qualifiedName": "T"
+		},
+		"14": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/usePostRequest.ts",
+			"qualifiedName": "__0"
+		},
+		"15": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/useThemeFromCookies.ts",
+			"qualifiedName": ""
+		},
+		"16": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/useThemeFromCookies.ts",
+			"qualifiedName": "useThemeFromCookies"
+		},
+		"17": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/hooks/useThemeFromCookies.ts",
+			"qualifiedName": "useThemeFromCookies"
+		},
+		"18": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"19": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/changeLanguageStore.ts",
+			"qualifiedName": ""
+		},
+		"20": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/changeLanguageStore.ts",
+			"qualifiedName": "changeLanguageStore"
+		},
+		"21": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/changeLanguageStore.ts",
+			"qualifiedName": "useChangeLanguageStore"
+		},
+		"22": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/changeLanguageStore.ts",
+			"qualifiedName": "useChangeLanguageStore"
+		},
+		"23": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/changeLanguageStore.ts",
+			"qualifiedName": "T"
+		},
+		"24": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/changeLanguageStore.ts",
+			"qualifiedName": "selector"
+		},
+		"25": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/changeLanguageStore.ts",
+			"qualifiedName": "__type"
+		},
+		"26": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/changeLanguageStore.ts",
+			"qualifiedName": "__type"
+		},
+		"27": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/changeLanguageStore.ts",
+			"qualifiedName": "state"
+		},
+		"28": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/changeModeStore.ts",
+			"qualifiedName": ""
+		},
+		"29": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/changeModeStore.ts",
+			"qualifiedName": "useThemeStore"
+		},
+		"30": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/selectedLanguageMenuStore.ts",
+			"qualifiedName": ""
+		},
+		"31": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/selectedLanguageMenuStore.ts",
+			"qualifiedName": "useSelectedLanguageMenuStore"
+		},
+		"32": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/snackbarStore.ts",
+			"qualifiedName": ""
+		},
+		"33": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/snackbarStore.ts",
+			"qualifiedName": "useSnackStore"
+		},
+		"34": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/useCookieStore.ts",
+			"qualifiedName": ""
+		},
+		"35": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/stores/useCookieStore.ts",
+			"qualifiedName": "useSCookieStore"
+		},
+		"36": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": ""
+		},
+		"37": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.ChangeLanguage"
+		},
+		"38": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.ChangeLanguage.T"
+		},
+		"39": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.ChangeLanguage.__index"
+		},
+		"41": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.User"
+		},
+		"42": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.User.T"
+		},
+		"43": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.User.__index"
+		},
+		"45": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.BreakpointResult"
+		},
+		"46": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.BreakpointResult.isMobile"
+		},
+		"47": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.BreakpointResult.isTablet"
+		},
+		"48": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.BreakpointResult.isDesktop"
+		},
+		"49": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.BreakpointResult.current"
+		},
+		"50": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.AuthHookResult"
+		},
+		"51": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.AuthHookResult.user"
+		},
+		"52": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.AuthHookResult.isLoading"
+		},
+		"53": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.AuthHookResult.error"
+		},
+		"54": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.AuthHookResult.T"
+		},
+		"55": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.UsePostParams"
+		},
+		"56": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.UsePostParams.path"
+		},
+		"57": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.UsePostParams.body"
+		},
+		"58": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.UsePostResult"
+		},
+		"59": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.UsePostResult.data"
+		},
+		"60": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.UsePostResult.error"
+		},
+		"61": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.UsePostResult.loading"
+		},
+		"62": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.UsePostResult.sendPostRequest"
+		},
+		"63": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"64": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"65": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.UsePostResult.T"
+		},
+		"66": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.DecodedToken"
+		},
+		"67": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.DecodedToken.user"
+		},
+		"68": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.DecodedToken.exp"
+		},
+		"69": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.DecodedToken.iat"
+		},
+		"70": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.DecodedToken.T"
+		},
+		"71": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.ChangeLanguageState"
+		},
+		"73": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.languageSelected"
+		},
+		"74": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.languageChangedManually"
+		},
+		"75": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.changelanguage"
+		},
+		"76": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.setLanguage"
+		},
+		"77": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"78": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"79": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "lang"
+		},
+		"80": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "manually"
+		},
+		"81": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.setChangelanguage"
+		},
+		"82": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"83": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"84": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "data"
+		},
+		"85": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.ThemeStore"
+		},
+		"87": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.mode"
+		},
+		"88": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.language"
+		},
+		"89": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.highContrast"
+		},
+		"90": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.toggleMode"
+		},
+		"91": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"92": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"93": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.setMode"
+		},
+		"94": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"95": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"96": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "mode"
+		},
+		"97": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.setLanguage"
+		},
+		"98": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"99": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"100": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "language"
+		},
+		"101": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.toggleHighContrast"
+		},
+		"102": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"103": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"104": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.setHighContrast"
+		},
+		"105": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"106": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"107": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "highContrast"
+		},
+		"108": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.SnackbarState"
+		},
+		"110": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.snack"
+		},
+		"111": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"112": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.message"
+		},
+		"113": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.severity"
+		},
+		"114": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.open"
+		},
+		"115": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.setSnack"
+		},
+		"116": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"117": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"118": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "message"
+		},
+		"119": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "severity"
+		},
+		"120": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.closeSnack"
+		},
+		"121": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"122": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"123": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.SelectedLanguageMenuState"
+		},
+		"125": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.selectedLanguage"
+		},
+		"126": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.setSelectedLanguage"
+		},
+		"127": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"128": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"129": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "language"
+		},
+		"130": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.CookieState"
+		},
+		"132": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.authToken"
+		},
+		"133": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.setAuthToken"
+		},
+		"134": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"135": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"136": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "token"
+		},
+		"137": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type.removeAuthToken"
+		},
+		"138": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"139": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__type"
+		},
+		"140": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.Breakpoint"
+		},
+		"141": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.MAX_AGE"
+		},
+		"142": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.COOKIE_PATH"
+		},
+		"143": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/utils/globals.ts",
+			"qualifiedName": ""
+		},
+		"144": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/utils/globals.ts",
+			"qualifiedName": "MAX_AGE"
+		},
+		"145": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/utils/globals.ts",
+			"qualifiedName": "COOKIE_PATH"
+		},
+		"146": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.dom.d.ts",
+			"qualifiedName": "Window"
+		},
+		"147": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.dom.d.ts",
+			"qualifiedName": "__type"
+		},
+		"148": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.dom.d.ts",
+			"qualifiedName": "__type"
+		},
+		"149": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.dom.d.ts",
+			"qualifiedName": "Window"
+		},
+		"150": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.Window.MAX_AGE"
+		},
+		"151": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/types.d.ts",
+			"qualifiedName": "__global.Window.COOKIE_PATH"
+		},
+		"152": {
+			"packageName": "typescript",
+			"packagePath": "lib/lib.dom.d.ts",
+			"qualifiedName": "Window.__index"
+		},
+		"154": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "changeLanguageStore"
+		},
+		"155": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "useChangeLanguageStore"
+		},
+		"156": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "useThemeStore"
+		},
+		"157": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "useSelectedLanguageMenuStore"
+		},
+		"158": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "useSnackStore"
+		},
+		"159": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "useSCookieStore"
+		},
+		"160": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "useAuthHook"
+		},
+		"161": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "useBreakpoint"
+		},
+		"162": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "useLanguageEffect"
+		},
+		"163": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "usePost"
+		},
+		"164": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "useThemeFromCookies"
+		},
+		"165": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "MAX_AGE"
+		},
+		"166": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "COOKIE_PATH"
+		},
+		"167": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "ChangeLanguage"
+		},
+		"168": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "User"
+		},
+		"169": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "BreakpointResult"
+		},
+		"170": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "AuthHookResult"
+		},
+		"171": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "DecodedToken"
+		},
+		"172": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "ChangeLanguageState"
+		},
+		"173": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "ThemeStore"
+		},
+		"174": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "SnackbarState"
+		},
+		"175": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "SelectedLanguageMenuState"
+		},
+		"176": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "CookieState"
+		},
+		"177": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "Breakpoint"
+		},
+		"178": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "UsePostParams"
+		},
+		"179": {
+			"packageName": "@munirmardinli_org/react-utils",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "UsePostResult"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/hooks/useAuthHook.ts",
+			"2": "src/hooks/useBreakpoint.ts",
+			"3": "src/hooks/useLanguageEffect.ts",
+			"4": "src/hooks/usePostRequest.ts",
+			"5": "src/hooks/useThemeFromCookies.ts",
+			"6": "src/index.ts",
+			"7": "src/stores/changeLanguageStore.ts",
+			"8": "src/stores/changeModeStore.ts",
+			"9": "src/stores/selectedLanguageMenuStore.ts",
+			"10": "src/stores/snackbarStore.ts",
+			"11": "src/stores/useCookieStore.ts",
+			"12": "src/types.d.ts",
+			"13": "src/utils/globals.ts"
+		},
+		"reflections": {
+			"1": 1,
+			"2": 4,
+			"3": 7,
+			"4": 10,
+			"5": 15,
+			"6": 18,
+			"7": 19,
+			"8": 28,
+			"9": 30,
+			"10": 32,
+			"11": 34,
+			"12": 36,
+			"13": 143
+		}
+	}
+}
