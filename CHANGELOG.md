@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/munirmardinli/react-utils/compare/v1.1.0...v1.2.0) (2025-06-26)
+
+
+### Features
+
+* add Codecov in cicd ([ecdd0a4](https://github.com/munirmardinli/react-utils/commit/ecdd0a4c9458f6c1d8aebed02932bf1c87fa1dfc))
+
 # [1.1.0](https://github.com/munirmardinli/react-utils/compare/v1.0.3...v1.1.0) (2025-06-26)
 
 
