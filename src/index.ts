@@ -13,8 +13,7 @@ export { useBreakpoint } from "./hooks/useBreakpoint.js";
 export { useLanguageEffect } from "./hooks/useLanguageEffect.js";
 export { usePost } from "./hooks/usePostRequest.js";
 export { useThemeFromCookies } from "./hooks/useThemeFromCookies.js";
-export { MAX_AGE } from "./utils/globals.js";
-export { COOKIE_PATH } from "./utils/globals.js";
+import 'dotenv/config'
 
 export type {
   ChangeLanguage,

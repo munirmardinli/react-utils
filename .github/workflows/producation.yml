@@ -110,8 +110,12 @@ jobs:
      uses: codecov/codecov-action@v5
      with:
       token: ${{ secrets.CODECOV_TOKEN }}
-      directory: docs/coverage
+      files: docs/coverage/lcov.info
       verbose: true
+      flags: core,hooks,stores,utils
+     env:
+      CODECOV_SLUG: ${{ github.repository }}
+      CODECOV_NAME: "jest-coverage"
    - name: Deploy to gh-pages branch
      uses: peaceiris/actions-gh-pages@v4
      with:

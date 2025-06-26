@@ -3,6 +3,7 @@ import { parseCookies, setCookie } from 'nookies';
 import { create } from 'zustand';
 import { persist, devtools } from 'zustand/middleware';
 
+const COOKIE_PATH = '/';
 /**
  * Zustand store for managing the selected language in the application menu.
  * Persists the selection between sessions using cookies and localStorage.

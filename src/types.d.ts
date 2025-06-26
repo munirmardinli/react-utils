@@ -186,10 +186,5 @@ declare global {
 		/** Cookie path */
 		COOKIE_PATH: string;
 	}
-
-	/** Cookie max age in seconds (30 days) */
-	var MAX_AGE: number;
-	/** Cookie path ('/') */
-	var COOKIE_PATH: string;
 }
 export { };

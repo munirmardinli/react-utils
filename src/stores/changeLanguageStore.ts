@@ -7,6 +7,8 @@ import { createStore } from 'zustand/vanilla';
 import { useThemeStore } from '../stores/changeModeStore';
 import { useSnackStore } from '../stores/snackbarStore';
 
+const COOKIE_PATH = '/';
+const MAX_AGE = 30 * 24 * 60 * 60;
 /**
  * Zustand store for managing application language settings and changes.
  *

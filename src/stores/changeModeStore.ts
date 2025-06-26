@@ -3,6 +3,8 @@ import { setCookie } from 'nookies';
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 
+const COOKIE_PATH = '/';
+const MAX_AGE = 30 * 24 * 60 * 60;
 /**
  * Zustand store for managing application theme settings including:
  * - Color mode (light/dark)

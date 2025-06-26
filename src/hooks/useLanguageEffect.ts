@@ -7,6 +7,8 @@ import {
 	useChangeLanguageStore,
 } from '../stores/changeLanguageStore';
 
+const COOKIE_PATH = '/';
+const MAX_AGE = 30 * 24 * 60 * 60;
 /**
  * Custom hook for managing language selection and synchronization with cookies/API
  *
