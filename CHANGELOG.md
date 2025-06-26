@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/munirmardinli/react-utils/compare/v1.2.0...v1.3.0) (2025-06-26)
+
+
+### Features
+
+* add codecov workflow ([71295f5](https://github.com/munirmardinli/react-utils/commit/71295f5e66ddcc48ebd2d80a39e2681db5a47aeb))
+
 # [1.2.0](https://github.com/munirmardinli/react-utils/compare/v1.1.0...v1.2.0) (2025-06-26)
 
 
