@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/munirmardinli/react-utils/compare/v1.3.0...v1.4.0) (2025-06-26)
+
+
+### Features
+
+* test codecov ([1a3a855](https://github.com/munirmardinli/react-utils/commit/1a3a855175a15ac5d3d5dfb5c04dcc1fc44217eb))
+
 # [1.3.0](https://github.com/munirmardinli/react-utils/compare/v1.2.0...v1.3.0) (2025-06-26)
 
 
