@@ -137,14 +137,14 @@ src/
    - LocalStorage fallback
    - DevTools integration
 
-```tsx
-const { languageSelected, setLanguage } = useChangeLanguageStore();
+  ```tsx
+  const { languageSelected, setLanguage } = useChangeLanguageStore();
 
-<select value={languageSelected} onChange={(e) => setLanguage(e.target.value)}>
-  <option value="en">English</option>
-  <option value="fr">Français</option>
-</select>;
-```
+  <select value={languageSelected} onChange={(e) => setLanguage(e.target.value)}>
+    <option value="en">English</option>
+    <option value="fr">Français</option>
+  </select>;
+  ```
 
 ## 🌀 Core Hooks
 

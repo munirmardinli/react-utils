@@ -1,6 +1,6 @@
 {
 	"name": "@munirmardinli_org/react-utils",
-	"version": "0.0.1",
+	"version": "1.0.3",
 	"private": false,
 	"sideEffects": false,
 	"type": "module",
@@ -53,10 +53,6 @@
 			"url": "https://linktr.ee/munirmardinli"
 		}
 	],
-	"scripts": {
-		"npm": "tsc -p tsconfig.npm.json",
-		"husky": "husky install"
-	},
 	"devDependencies": {
 		"@semantic-release/changelog": "^6.0.3",
 		"@semantic-release/commit-analyzer": "^13.0.1",

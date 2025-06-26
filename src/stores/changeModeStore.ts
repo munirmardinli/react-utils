@@ -5,7 +5,7 @@
 'use client';
 import { setCookie } from 'nookies';
 import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import { persist, createJSONStorage } from 'zustand/middleware';
 
 /**
  * Zustand store for managing application theme settings including:
@@ -109,7 +109,7 @@ export const useThemeStore = create<ThemeStore>()(
 		}),
 		{
 			name: 'theme-store',
-			getStorage: () => localStorage,
+			storage: createJSONStorage(() => localStorage),
 		},
 	),
 );

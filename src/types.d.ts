@@ -5,32 +5,32 @@
 import type { PaletteMode } from '@mui/material';
 
 /**
- * Global type declarations for the application.
- * Contains interfaces and types used across the entire codebase.
- *
- * @module GlobalTypes
- */
+* Global type declarations for the application.
+* Contains interfaces and types used across the entire codebase.
+*
+* @module GlobalTypes
+*/
 declare global {
 
 	/**
-	 * Generic language change handler interface
-	 * @template T - Optional generic type for additional properties
-	 */
+	* Generic language change handler interface
+	* @template T - Optional generic type for additional properties
+	*/
 	interface ChangeLanguage<T = Record<string, unknown>> {
 		[key: string]: unknown
 	}
 
 	/**
-	 * User profile interface with generic type support
-	 * @template T - Optional generic type for user properties
-	 */
+	* User profile interface with generic type support
+	* @template T - Optional generic type for user properties
+	*/
 	interface User<T = Record<string | null, unknown>> {
 		[key: string | null]: unknown;
 	}
 
 	/**
-	 * Responsive breakpoint detection results
-	 */
+	* Responsive breakpoint detection results
+	*/
 	interface BreakpointResult {
 		/** Mobile device detection flag */
 		isMobile: boolean;
@@ -43,9 +43,9 @@ declare global {
 	}
 
 	/**
-	 * Authentication hook return type
-	 * @template T - User type extending base User interface
-	 */
+	* Authentication hook return type
+	* @template T - User type extending base User interface
+	*/
 	interface AuthHookResult<T extends User = User> {
 		/** Current authenticated user */
 		user: T | null;
@@ -55,10 +55,9 @@ declare global {
 		error: Error | null;
 	}
 
-
 	/**
-	 * POST request parameters
-	 */
+	* POST request parameters
+	*/
 	interface UsePostParams {
 		/** API endpoint path */
 		path: string;
@@ -67,9 +66,9 @@ declare global {
 	}
 
 	/**
-	 * POST request results
-	 * @template T - Response data type
-	 */
+	* POST request results
+	* @template T - Response data type
+	*/
 	interface UsePostResult<T = unknown> {
 		/** Response data */
 		data: T | null;
@@ -83,9 +82,9 @@ declare global {
 
 
 	/**
-	 * Decoded JWT token structure
-	 * @template T - User type extending base User interface
-	 */
+	* Decoded JWT token structure
+	* @template T - User type extending base User interface
+	*/
 	interface DecodedToken<T extends User = User> {
 		/** User information */
 		user: T;
@@ -95,10 +94,9 @@ declare global {
 		iat: number;
 	}
 
-
 	/**
-		* Language change state and methods
-		*/
+	* Language change state and methods
+	*/
 	type ChangeLanguageState = {
 		/** Currently selected language */
 		languageSelected: string;
@@ -113,8 +111,8 @@ declare global {
 	};
 
 	/**
-	 * Theme management store type
-	 */
+	* Theme management store type
+	*/
 	type ThemeStore = {
 		/** Current color mode */
 		mode: PaletteMode;
@@ -135,8 +133,8 @@ declare global {
 	};
 
 	/**
-	 * Snackbar notification state
-	 */
+	* Snackbar notification state
+	*/
 	type SnackbarState = {
 		/** Current snackbar state */
 		snack: {
@@ -154,8 +152,8 @@ declare global {
 	};
 
 	/**
-	 * Language menu selection state
-	 */
+	* Language menu selection state
+	*/
 	type SelectedLanguageMenuState = {
 		/** Currently selected language */
 		selectedLanguage: string;
@@ -164,8 +162,8 @@ declare global {
 	};
 
 	/**
-	 * Authentication cookie state
-	 */
+	* Authentication cookie state
+	*/
 	type CookieState = {
 		/** Current auth token */
 		authToken: string | null;
@@ -176,13 +174,13 @@ declare global {
 	};
 
 	/**
-	 * Responsive breakpoint types
-	 */
+	* Responsive breakpoint types
+	*/
 	type Breakpoint = 'mobile' | 'tablet' | 'desktop';
 
 	/**
-	 * Window type extensions
-	 */
+	* Window type extensions
+	*/
 	interface Window {
 		/** Cookie max age in seconds */
 		MAX_AGE: number;
