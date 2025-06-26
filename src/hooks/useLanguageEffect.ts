@@ -1,7 +1,3 @@
-/**
- * @author Munir Mardinli <munir@mardinli.de>
- * @date 2025-06-06
-*/
 'use client';
 import { parseCookies, setCookie } from 'nookies';
 import { useEffect } from 'react';
@@ -16,6 +12,8 @@ import {
  *
  * @version 1.0.0
  *
+ * @author Munir Mardinli
+ * @date 2025-06-06
  * @description
  * Handles language selection persistence by:
  * - Fetching translation files from API when language changes

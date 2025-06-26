@@ -1,4 +1,5 @@
 {
+ "$schema": "https://json.schemastore.org/tsconfig",
  "compilerOptions": {
   "rootDir": "src",
   "outDir": "lib",
@@ -9,7 +10,7 @@
   "module": "esnext",
   "moduleResolution": "node",
   "esModuleInterop": true,
-  "types": ["node"],
+  "types": ["node", "jest"],
   "strict": true,
   "allowJs": true,
   "skipLibCheck": true,

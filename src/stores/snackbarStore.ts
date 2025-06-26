@@ -1,7 +1,3 @@
-/**
- * @author Munir Mardinli <munir@mardinli.de>
- * @date 2025-06-06
-*/
 'use client';
 import { create } from 'zustand';
 
@@ -10,6 +6,8 @@ import { create } from 'zustand';
  * Provides simple controls for showing and hiding temporary user messages.
  *
  * @module SnackbarStore
+ * @author Munir Mardinli
+ * @date 2025-06-06
  * @property {Object} snack - Current snackbar state
  * @property {string} snack.message - Notification message content
  * @property {string} snack.severity - Visual style/color ('error', 'warning', 'info', 'success')

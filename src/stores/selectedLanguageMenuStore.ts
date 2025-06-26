@@ -1,7 +1,3 @@
-/**
- * @author Munir Mardinli <munir@mardinli.de>
- * @date 2025-06-06
-*/
 'use client';
 import { parseCookies, setCookie } from 'nookies';
 import { create } from 'zustand';
@@ -12,6 +8,8 @@ import { persist, devtools } from 'zustand/middleware';
  * Persists the selection between sessions using cookies and localStorage.
  *
  * @module SelectedLanguageMenuStore
+ * @author Munir Mardinli
+ * @date 2025-06-06
  * @property {string} selectedLanguage - Currently selected language code
  * @method setSelectedLanguage - Updates the selected language
  *

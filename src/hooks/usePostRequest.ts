@@ -1,7 +1,3 @@
-/**
- * @author Munir Mardinli <munir@mardinli.de>
- * @date 2025-06-06
-*/
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -9,6 +5,8 @@ import { useState, useEffect } from 'react';
 /**
  * Custom hook for making POST requests with type safety and state management
  *
+ * @author Munir Mardinli
+ * @date 2025-06-06
  * @template T - The expected response type (defaults to User)
  * @param {UsePostParams} params - Configuration object for the request
  * @param {string} params.path - API endpoint path (appended to base URL)

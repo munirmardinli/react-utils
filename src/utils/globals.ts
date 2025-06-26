@@ -7,6 +7,8 @@
  * Global cookie configuration constants for the application.
  * Defines standard cookie expiration and path settings used across all stores.
  *
+ * @author Munir Mardinli
+ * @date 2025-06-06
  * @module CookieConstants
  * @property {number} MAX_AGE - Default cookie lifetime in seconds (30 days)
  * @property {string} COOKIE_PATH - Default cookie path ('/')

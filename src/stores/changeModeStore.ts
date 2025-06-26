@@ -1,7 +1,3 @@
-/**
- * @author Munir Mardinli <munir@mardinli.de>
- * @date 2025-06-06
-*/
 'use client';
 import { setCookie } from 'nookies';
 import { create } from 'zustand';
@@ -14,6 +10,8 @@ import { persist, createJSONStorage } from 'zustand/middleware';
  * - High contrast mode
  *
  * @module ThemeStore
+ * @author Munir Mardinli
+ * @date 2025-06-06
  * @property {PaletteMode} mode - Current color mode ('light' or 'dark')
  * @property {string} language - Current language preference
  * @property {boolean} highContrast - High contrast mode status

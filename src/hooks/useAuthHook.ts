@@ -1,7 +1,3 @@
-/**
- * @author Munir Mardinli <munir@mardinli.de>
- * @date 2025-06-06
-*/
 'use client';
 import { jwtDecode } from 'jwt-decode';
 import { parseCookies } from 'nookies';
@@ -12,6 +8,8 @@ import { useSCookieStore } from '../stores/useCookieStore';
 /**
  * Custom hook for handling authentication state and token validation.
  *
+ * @author Munir Mardinli
+ * @date 2025-06-06
  * @returns {AuthHookResult} An object containing:
  *   - user: The authenticated user object or null
  *   - isLoading: Boolean indicating if auth check is in progress

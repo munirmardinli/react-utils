@@ -1,7 +1,3 @@
-/**
- * @author Munir Mardinli <munir@mardinli.de>
- * @date 2025-06-06
-*/
 'use client';
 import { setCookie } from 'nookies';
 import { useStore } from 'zustand';
@@ -15,6 +11,8 @@ import { useSnackStore } from '../stores/snackbarStore';
  * Zustand store for managing application language settings and changes.
  *
  * @module ChangeLanguageStore
+ * @author Munir Mardinli
+ * @date 2025-06-06
  *
  * @property {string} languageSelected - Currently selected language code (default: 'de')
  * @property {boolean} languageChangedManually - Flag if language was changed by user

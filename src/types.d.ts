@@ -1,7 +1,4 @@
-/**
- * @author Munir Mardinli <munir@mardinli.de>
- * @date 2025-06-06
-*/
+
 import type { PaletteMode } from '@mui/material';
 
 /**
@@ -9,6 +6,8 @@ import type { PaletteMode } from '@mui/material';
 * Contains interfaces and types used across the entire codebase.
 *
 * @module GlobalTypes
+* @author Munir Mardinli
+* @date 2025-06-06
 */
 declare global {
 

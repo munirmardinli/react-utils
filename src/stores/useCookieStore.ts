@@ -1,7 +1,3 @@
-/**
- * @author Munir Mardinli <munir@mardinli.de>
- * @date 2025-06-06
-*/
 'use client';
 import { setCookie, parseCookies } from 'nookies';
 import { create } from 'zustand';
@@ -12,6 +8,8 @@ import { create } from 'zustand';
  *
  * @module CookieStore
  *
+ * @author Munir Mardinli
+ * @date 2025-06-06
  * @property {string|null} authToken - Current authentication token (null if not authenticated)
  * @method setAuthToken - Stores a new authentication token
  * @method removeAuthToken - Clears the current authentication token

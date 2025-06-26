@@ -1,7 +1,3 @@
-/**
- * @author Munir Mardinli <munir@mardinli.de>
- * @date 2025-06-06
-*/
 import { PaletteMode } from '@mui/material';
 import { parseCookies } from 'nookies';
 import { useEffect } from 'react';
@@ -11,6 +7,8 @@ import { useThemeStore } from '../stores/changeModeStore';
 /**
  * Custom hook for synchronizing theme preferences between cookies and application state
  *
+ * @author Munir Mardinli
+ * @date 2025-06-06
  * @description
  * Manages theme synchronization by:
  * - Reading theme preferences from cookies on initial load

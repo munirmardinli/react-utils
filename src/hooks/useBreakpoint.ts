@@ -1,13 +1,11 @@
-/**
- * @author Munir Mardinli <munir@mardinli.de>
- * @date 2025-06-06
-*/
 import { useState, useEffect } from 'react';
 
 /**
  * Custom hook to track and respond to viewport breakpoint changes.
  * Provides responsive design information based on window width.
  *
+ * @author Munir Mardinli
+ * @date 2025-06-06
  * @returns {BreakpointResult} An object containing:
  *   - isMobile: boolean (width < 768px)
  *   - isTablet: boolean (768px ≤ width < 1024px)

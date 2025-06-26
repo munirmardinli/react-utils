@@ -1,3 +1,7 @@
+/**
+* @author Munir Mardinli
+* @date 2025-06-06
+*/
 export { changeLanguageStore } from './stores/changeLanguageStore.js';
 export { useChangeLanguageStore } from './stores/changeLanguageStore.js';
 export { useThemeStore } from "./stores/changeModeStore.js";
