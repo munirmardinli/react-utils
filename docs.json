@@ -342,9 +342,9 @@
 					"sources": [
 						{
 							"fileName": "src/hooks/useLanguageEffect.ts",
-							"line": 39,
+							"line": 41,
 							"character": 13,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useLanguageEffect.ts#L39"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useLanguageEffect.ts#L41"
 						}
 					],
 					"signatures": [
@@ -463,7 +463,11 @@
 												"kind": "inline-tag",
 												"tag": "@link",
 												"text": "COOKIE_PATH",
-												"target": 142
+												"target": {
+													"packageName": "@munirmardinli_org/react-utils",
+													"packagePath": "src/hooks/useLanguageEffect.ts",
+													"qualifiedName": "COOKIE_PATH"
+												}
 											},
 											{
 												"kind": "text",
@@ -481,7 +485,11 @@
 												"kind": "inline-tag",
 												"tag": "@link",
 												"text": "MAX_AGE",
-												"target": 141
+												"target": {
+													"packageName": "@munirmardinli_org/react-utils",
+													"packagePath": "src/hooks/useLanguageEffect.ts",
+													"qualifiedName": "MAX_AGE"
+												}
 											},
 											{
 												"kind": "text",
@@ -498,9 +506,9 @@
 							"sources": [
 								{
 									"fileName": "src/hooks/useLanguageEffect.ts",
-									"line": 39,
+									"line": 41,
 									"character": 33,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useLanguageEffect.ts#L39"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/hooks/useLanguageEffect.ts#L41"
 								}
 							],
 							"type": {
@@ -697,17 +705,8 @@
 												},
 												"typeArguments": [
 													{
-														"type": "union",
-														"types": [
-															{
-																"type": "literal",
-																"value": null
-															},
-															{
-																"type": "intrinsic",
-																"name": "string"
-															}
-														]
+														"type": "intrinsic",
+														"name": "string"
 													},
 													{
 														"type": "intrinsic",
@@ -990,7 +989,7 @@
 			"flags": {},
 			"children": [
 				{
-					"id": 171,
+					"id": 163,
 					"name": "AuthHookResult",
 					"variant": "reference",
 					"kind": 4194304,
@@ -998,15 +997,15 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 23,
-							"character": 2,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L23"
+							"line": 22,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L22"
 						}
 					],
 					"target": 50
 				},
 				{
-					"id": 178,
+					"id": 170,
 					"name": "Breakpoint",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1014,15 +1013,15 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 30,
-							"character": 2,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L30"
+							"line": 29,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L29"
 						}
 					],
 					"target": 140
 				},
 				{
-					"id": 170,
+					"id": 162,
 					"name": "BreakpointResult",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1030,15 +1029,15 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 22,
-							"character": 2,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L22"
+							"line": 21,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L21"
 						}
 					],
 					"target": 45
 				},
 				{
-					"id": 168,
+					"id": 160,
 					"name": "ChangeLanguage",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1046,15 +1045,15 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 20,
-							"character": 2,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L20"
+							"line": 19,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L19"
 						}
 					],
 					"target": 37
 				},
 				{
-					"id": 173,
+					"id": 165,
 					"name": "ChangeLanguageState",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1062,15 +1061,15 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 25,
-							"character": 2,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L25"
+							"line": 24,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L24"
 						}
 					],
 					"target": 71
 				},
 				{
-					"id": 155,
+					"id": 149,
 					"name": "changeLanguageStore",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1109,23 +1108,7 @@
 					"target": 20
 				},
 				{
-					"id": 167,
-					"name": "COOKIE_PATH",
-					"variant": "reference",
-					"kind": 4194304,
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 17,
-							"character": 9,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L17"
-						}
-					],
-					"target": 146
-				},
-				{
-					"id": 177,
+					"id": 169,
 					"name": "CookieState",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1133,15 +1116,15 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 29,
-							"character": 2,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L29"
+							"line": 28,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L28"
 						}
 					],
 					"target": 130
 				},
 				{
-					"id": 172,
+					"id": 164,
 					"name": "DecodedToken",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1149,31 +1132,15 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 24,
-							"character": 2,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L24"
+							"line": 23,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L23"
 						}
 					],
 					"target": 66
 				},
 				{
-					"id": 166,
-					"name": "MAX_AGE",
-					"variant": "reference",
-					"kind": 4194304,
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 16,
-							"character": 9,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L16"
-						}
-					],
-					"target": 145
-				},
-				{
-					"id": 176,
+					"id": 168,
 					"name": "SelectedLanguageMenuState",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1181,15 +1148,15 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 28,
-							"character": 2,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L28"
+							"line": 27,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L27"
 						}
 					],
 					"target": 123
 				},
 				{
-					"id": 175,
+					"id": 167,
 					"name": "SnackbarState",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1197,15 +1164,15 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 27,
-							"character": 2,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L27"
+							"line": 26,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L26"
 						}
 					],
 					"target": 108
 				},
 				{
-					"id": 174,
+					"id": 166,
 					"name": "ThemeStore",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1213,15 +1180,15 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 26,
-							"character": 2,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L26"
+							"line": 25,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L25"
 						}
 					],
 					"target": 85
 				},
 				{
-					"id": 161,
+					"id": 155,
 					"name": "useAuthHook",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1237,7 +1204,7 @@
 					"target": 2
 				},
 				{
-					"id": 162,
+					"id": 156,
 					"name": "useBreakpoint",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1253,7 +1220,7 @@
 					"target": 5
 				},
 				{
-					"id": 156,
+					"id": 150,
 					"name": "useChangeLanguageStore",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1269,7 +1236,7 @@
 					"target": 21
 				},
 				{
-					"id": 163,
+					"id": 157,
 					"name": "useLanguageEffect",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1285,7 +1252,7 @@
 					"target": 8
 				},
 				{
-					"id": 164,
+					"id": 158,
 					"name": "usePost",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1301,7 +1268,7 @@
 					"target": 11
 				},
 				{
-					"id": 179,
+					"id": 171,
 					"name": "UsePostParams",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1309,15 +1276,15 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 31,
-							"character": 2,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L31"
+							"line": 30,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L30"
 						}
 					],
 					"target": 55
 				},
 				{
-					"id": 180,
+					"id": 172,
 					"name": "UsePostResult",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1325,15 +1292,15 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 32,
-							"character": 2,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L32"
+							"line": 31,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L31"
 						}
 					],
 					"target": 58
 				},
 				{
-					"id": 169,
+					"id": 161,
 					"name": "User",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1341,15 +1308,15 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 21,
-							"character": 2,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L21"
+							"line": 20,
+							"character": 6,
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/index.ts#L20"
 						}
 					],
 					"target": 41
 				},
 				{
-					"id": 160,
+					"id": 154,
 					"name": "useSCookieStore",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1365,7 +1332,7 @@
 					"target": 35
 				},
 				{
-					"id": 158,
+					"id": 152,
 					"name": "useSelectedLanguageMenuStore",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1381,7 +1348,7 @@
 					"target": 31
 				},
 				{
-					"id": 159,
+					"id": 153,
 					"name": "useSnackStore",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1397,7 +1364,7 @@
 					"target": 33
 				},
 				{
-					"id": 165,
+					"id": 159,
 					"name": "useThemeFromCookies",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1413,7 +1380,7 @@
 					"target": 16
 				},
 				{
-					"id": 157,
+					"id": 151,
 					"name": "useThemeStore",
 					"variant": "reference",
 					"kind": 4194304,
@@ -1433,47 +1400,45 @@
 				{
 					"title": "Variables",
 					"children": [
-						155,
-						167,
-						166,
-						160,
-						158,
-						159,
-						157
+						149,
+						154,
+						152,
+						153,
+						151
 					]
 				},
 				{
 					"title": "Functions",
 					"children": [
-						161,
-						162,
+						155,
 						156,
-						163,
-						164,
-						165
+						150,
+						157,
+						158,
+						159
 					]
 				},
 				{
 					"title": "Interfaces",
 					"children": [
+						163,
+						162,
+						160,
+						164,
 						171,
-						170,
-						168,
 						172,
-						179,
-						180,
-						169
+						161
 					]
 				},
 				{
 					"title": "Type Aliases",
 					"children": [
-						178,
-						173,
-						177,
-						176,
-						175,
-						174
+						170,
+						165,
+						169,
+						168,
+						167,
+						166
 					]
 				}
 			],
@@ -1504,9 +1469,9 @@
 					"sources": [
 						{
 							"fileName": "src/stores/changeLanguageStore.ts",
-							"line": 31,
+							"line": 33,
 							"character": 13,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L31"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L33"
 						}
 					],
 					"type": {
@@ -1589,9 +1554,9 @@
 					"sources": [
 						{
 							"fileName": "src/stores/changeLanguageStore.ts",
-							"line": 100,
+							"line": 102,
 							"character": 13,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L100"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L102"
 						}
 					],
 					"signatures": [
@@ -1623,9 +1588,9 @@
 							"sources": [
 								{
 									"fileName": "src/stores/changeLanguageStore.ts",
-									"line": 100,
+									"line": 102,
 									"character": 38,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L100"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L102"
 								}
 							],
 							"typeParameters": [
@@ -1663,9 +1628,9 @@
 											"sources": [
 												{
 													"fileName": "src/stores/changeLanguageStore.ts",
-													"line": 101,
+													"line": 103,
 													"character": 12,
-													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L101"
+													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L103"
 												}
 											],
 											"signatures": [
@@ -1678,9 +1643,9 @@
 													"sources": [
 														{
 															"fileName": "src/stores/changeLanguageStore.ts",
-															"line": 101,
+															"line": 103,
 															"character": 12,
-															"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L101"
+															"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeLanguageStore.ts#L103"
 														}
 													],
 													"parameters": [
@@ -1764,9 +1729,9 @@
 					"sources": [
 						{
 							"fileName": "src/stores/changeModeStore.ts",
-							"line": 32,
+							"line": 34,
 							"character": 13,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeModeStore.ts#L32"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/changeModeStore.ts#L34"
 						}
 					],
 					"type": {
@@ -1873,9 +1838,9 @@
 					"sources": [
 						{
 							"fileName": "src/stores/selectedLanguageMenuStore.ts",
-							"line": 23,
+							"line": 24,
 							"character": 13,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/selectedLanguageMenuStore.ts#L23"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/selectedLanguageMenuStore.ts#L24"
 						}
 					],
 					"type": {
@@ -2071,9 +2036,9 @@
 					"sources": [
 						{
 							"fileName": "src/stores/useCookieStore.ts",
-							"line": 26,
+							"line": 28,
 							"character": 13,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/useCookieStore.ts#L26"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/stores/useCookieStore.ts#L28"
 						}
 					],
 					"type": {
@@ -2165,10 +2130,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 54,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L54"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L54"
 								}
 							],
 							"type": {
@@ -2207,10 +2172,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 52,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L52"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L52"
 								}
 							],
 							"type": {
@@ -2234,10 +2199,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 50,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L50"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L50"
 								}
 							],
 							"type": {
@@ -2271,10 +2236,10 @@
 					],
 					"sources": [
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 48,
 							"character": 11,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L48"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L48"
 						}
 					],
 					"typeParameters": [
@@ -2340,10 +2305,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 41,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L41"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L41"
 								}
 							],
 							"type": {
@@ -2370,10 +2335,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 39,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L39"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L39"
 								}
 							],
 							"type": {
@@ -2397,10 +2362,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 35,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L35"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L35"
 								}
 							],
 							"type": {
@@ -2424,10 +2389,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 37,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L37"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L37"
 								}
 							],
 							"type": {
@@ -2449,10 +2414,10 @@
 					],
 					"sources": [
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 33,
 							"character": 11,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L33"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L33"
 						}
 					]
 				},
@@ -2472,10 +2437,10 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 18,
 							"character": 11,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L18"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L18"
 						}
 					],
 					"typeParameters": [
@@ -2524,10 +2489,10 @@
 							"flags": {},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 19,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L19"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L19"
 								}
 							],
 							"parameters": [
@@ -2581,10 +2546,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 91,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L91"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L91"
 								}
 							],
 							"type": {
@@ -2608,10 +2573,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 93,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L93"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L93"
 								}
 							],
 							"type": {
@@ -2635,10 +2600,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 89,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L89"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L89"
 								}
 							],
 							"type": {
@@ -2663,10 +2628,10 @@
 					],
 					"sources": [
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 87,
 							"character": 11,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L87"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L87"
 						}
 					],
 					"typeParameters": [
@@ -2732,10 +2697,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 62,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L62"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L62"
 								}
 							],
 							"type": {
@@ -2761,10 +2726,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 64,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L64"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L64"
 								}
 							],
 							"type": {
@@ -2784,10 +2749,10 @@
 					],
 					"sources": [
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 60,
 							"character": 11,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L60"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L60"
 						}
 					]
 				},
@@ -2822,10 +2787,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 73,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L73"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L73"
 								}
 							],
 							"type": {
@@ -2862,10 +2827,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 75,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L75"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L75"
 								}
 							],
 							"type": {
@@ -2898,10 +2863,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 77,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L77"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L77"
 								}
 							],
 							"type": {
@@ -2927,10 +2892,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 79,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L79"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L79"
 								}
 							],
 							"type": {
@@ -2943,10 +2908,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "src/types.d.ts",
+											"fileName": "src/types.ts",
 											"line": 79,
 											"character": 20,
-											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L79"
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L79"
 										}
 									],
 									"signatures": [
@@ -2958,10 +2923,10 @@
 											"flags": {},
 											"sources": [
 												{
-													"fileName": "src/types.d.ts",
+													"fileName": "src/types.ts",
 													"line": 79,
 													"character": 20,
-													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L79"
+													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L79"
 												}
 											],
 											"type": {
@@ -2999,10 +2964,10 @@
 					],
 					"sources": [
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 71,
 							"character": 11,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L71"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L71"
 						}
 					],
 					"typeParameters": [
@@ -3043,10 +3008,10 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 26,
 							"character": 11,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L26"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L26"
 						}
 					],
 					"typeParameters": [
@@ -3073,17 +3038,8 @@
 								},
 								"typeArguments": [
 									{
-										"type": "union",
-										"types": [
-											{
-												"type": "intrinsic",
-												"name": "string"
-											},
-											{
-												"type": "literal",
-												"value": null
-											}
-										]
+										"type": "intrinsic",
+										"name": "string"
 									},
 									{
 										"type": "intrinsic",
@@ -3104,10 +3060,10 @@
 							"flags": {},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 27,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L27"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L27"
 								}
 							],
 							"parameters": [
@@ -3131,7 +3087,7 @@
 					]
 				},
 				{
-					"id": 150,
+					"id": 144,
 					"name": "Window",
 					"variant": "declaration",
 					"kind": 256,
@@ -3146,7 +3102,7 @@
 					},
 					"children": [
 						{
-							"id": 152,
+							"id": 146,
 							"name": "COOKIE_PATH",
 							"variant": "declaration",
 							"kind": 1024,
@@ -3161,10 +3117,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 187,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L187"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L187"
 								}
 							],
 							"type": {
@@ -3173,7 +3129,7 @@
 							}
 						},
 						{
-							"id": 151,
+							"id": 145,
 							"name": "MAX_AGE",
 							"variant": "declaration",
 							"kind": 1024,
@@ -3188,10 +3144,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 185,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L185"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L185"
 								}
 							],
 							"type": {
@@ -3204,8 +3160,8 @@
 						{
 							"title": "Properties",
 							"children": [
-								152,
-								151
+								146,
+								145
 							]
 						}
 					],
@@ -3246,15 +3202,15 @@
 							"character": 14
 						},
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 183,
 							"character": 11,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L183"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L183"
 						}
 					],
 					"indexSignatures": [
 						{
-							"id": 153,
+							"id": 147,
 							"name": "__index",
 							"variant": "signature",
 							"kind": 8192,
@@ -3268,7 +3224,7 @@
 							],
 							"parameters": [
 								{
-									"id": 154,
+									"id": 148,
 									"name": "index",
 									"variant": "param",
 									"kind": 32768,
@@ -3281,7 +3237,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"target": 150,
+								"target": 144,
 								"name": "Window",
 								"package": "typescript"
 							}
@@ -3376,10 +3332,10 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 178,
 							"character": 6,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L178"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L178"
 						}
 					],
 					"type": {
@@ -3431,10 +3387,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 105,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L105"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L105"
 								}
 							],
 							"type": {
@@ -3470,10 +3426,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 103,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L103"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L103"
 								}
 							],
 							"type": {
@@ -3497,10 +3453,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 101,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L101"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L101"
 								}
 							],
 							"type": {
@@ -3524,10 +3480,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 109,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L109"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L109"
 								}
 							],
 							"type": {
@@ -3540,10 +3496,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "src/types.d.ts",
+											"fileName": "src/types.ts",
 											"line": 109,
 											"character": 21,
-											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L109"
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L109"
 										}
 									],
 									"signatures": [
@@ -3594,10 +3550,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 107,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L107"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L107"
 								}
 							],
 							"type": {
@@ -3610,10 +3566,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "src/types.d.ts",
+											"fileName": "src/types.ts",
 											"line": 107,
 											"character": 15,
-											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L107"
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L107"
 										}
 									],
 									"signatures": [
@@ -3673,10 +3629,10 @@
 					],
 					"sources": [
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 99,
 							"character": 6,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L99"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L99"
 						}
 					]
 				},
@@ -3711,10 +3667,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 168,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L168"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L168"
 								}
 							],
 							"type": {
@@ -3747,10 +3703,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 172,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L172"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L172"
 								}
 							],
 							"type": {
@@ -3763,10 +3719,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "src/types.d.ts",
+											"fileName": "src/types.ts",
 											"line": 172,
 											"character": 19,
-											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L172"
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L172"
 										}
 									],
 									"signatures": [
@@ -3801,10 +3757,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 170,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L170"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L170"
 								}
 							],
 							"type": {
@@ -3817,10 +3773,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "src/types.d.ts",
+											"fileName": "src/types.ts",
 											"line": 170,
 											"character": 16,
-											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L170"
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L170"
 										}
 									],
 									"signatures": [
@@ -3865,10 +3821,10 @@
 					],
 					"sources": [
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 166,
 							"character": 6,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L166"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L166"
 						}
 					]
 				},
@@ -3903,10 +3859,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 158,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L158"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L158"
 								}
 							],
 							"type": {
@@ -3930,10 +3886,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 160,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L160"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L160"
 								}
 							],
 							"type": {
@@ -3946,10 +3902,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "src/types.d.ts",
+											"fileName": "src/types.ts",
 											"line": 160,
 											"character": 23,
-											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L160"
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L160"
 										}
 									],
 									"signatures": [
@@ -3993,10 +3949,10 @@
 					],
 					"sources": [
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 156,
 							"character": 6,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L156"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L156"
 						}
 					]
 				},
@@ -4031,10 +3987,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 150,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L150"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L150"
 								}
 							],
 							"type": {
@@ -4047,10 +4003,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "src/types.d.ts",
+											"fileName": "src/types.ts",
 											"line": 150,
 											"character": 14,
-											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L150"
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L150"
 										}
 									],
 									"signatures": [
@@ -4085,10 +4041,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 148,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L148"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L148"
 								}
 							],
 							"type": {
@@ -4101,10 +4057,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "src/types.d.ts",
+											"fileName": "src/types.ts",
 											"line": 148,
 											"character": 12,
-											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L148"
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L148"
 										}
 									],
 									"signatures": [
@@ -4163,10 +4119,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 139,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L139"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L139"
 								}
 							],
 							"type": {
@@ -4194,10 +4150,10 @@
 											},
 											"sources": [
 												{
-													"fileName": "src/types.d.ts",
+													"fileName": "src/types.ts",
 													"line": 141,
 													"character": 3,
-													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L141"
+													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L141"
 												}
 											],
 											"type": {
@@ -4221,10 +4177,10 @@
 											},
 											"sources": [
 												{
-													"fileName": "src/types.d.ts",
+													"fileName": "src/types.ts",
 													"line": 145,
 													"character": 3,
-													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L145"
+													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L145"
 												}
 											],
 											"type": {
@@ -4248,10 +4204,10 @@
 											},
 											"sources": [
 												{
-													"fileName": "src/types.d.ts",
+													"fileName": "src/types.ts",
 													"line": 143,
 													"character": 3,
-													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L143"
+													"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L143"
 												}
 											],
 											"type": {
@@ -4272,10 +4228,10 @@
 									],
 									"sources": [
 										{
-											"fileName": "src/types.d.ts",
+											"fileName": "src/types.ts",
 											"line": 139,
 											"character": 9,
-											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L139"
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L139"
 										}
 									]
 								}
@@ -4294,10 +4250,10 @@
 					],
 					"sources": [
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 137,
 							"character": 6,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L137"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L137"
 						}
 					]
 				},
@@ -4332,10 +4288,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 121,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L121"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L121"
 								}
 							],
 							"type": {
@@ -4359,10 +4315,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 119,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L119"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L119"
 								}
 							],
 							"type": {
@@ -4386,10 +4342,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 117,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L117"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L117"
 								}
 							],
 							"type": {
@@ -4419,10 +4375,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 131,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L131"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L131"
 								}
 							],
 							"type": {
@@ -4435,10 +4391,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "src/types.d.ts",
+											"fileName": "src/types.ts",
 											"line": 131,
 											"character": 19,
-											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L131"
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L131"
 										}
 									],
 									"signatures": [
@@ -4486,10 +4442,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 127,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L127"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L127"
 								}
 							],
 							"type": {
@@ -4502,10 +4458,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "src/types.d.ts",
+											"fileName": "src/types.ts",
 											"line": 127,
 											"character": 15,
-											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L127"
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L127"
 										}
 									],
 									"signatures": [
@@ -4553,10 +4509,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 125,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L125"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L125"
 								}
 							],
 							"type": {
@@ -4569,10 +4525,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "src/types.d.ts",
+											"fileName": "src/types.ts",
 											"line": 125,
 											"character": 11,
-											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L125"
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L125"
 										}
 									],
 									"signatures": [
@@ -4626,10 +4582,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 129,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L129"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L129"
 								}
 							],
 							"type": {
@@ -4642,10 +4598,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "src/types.d.ts",
+											"fileName": "src/types.ts",
 											"line": 129,
 											"character": 22,
-											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L129"
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L129"
 										}
 									],
 									"signatures": [
@@ -4680,10 +4636,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/types.d.ts",
+									"fileName": "src/types.ts",
 									"line": 123,
 									"character": 2,
-									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L123"
+									"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L123"
 								}
 							],
 							"type": {
@@ -4696,10 +4652,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "src/types.d.ts",
+											"fileName": "src/types.ts",
 											"line": 123,
 											"character": 14,
-											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L123"
+											"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L123"
 										}
 									],
 									"signatures": [
@@ -4736,69 +4692,15 @@
 					],
 					"sources": [
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 115,
 							"character": 6,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L115"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L115"
 						}
 					]
 				},
 				{
-					"id": 142,
-					"name": "COOKIE_PATH",
-					"variant": "declaration",
-					"kind": 32,
-					"flags": {},
-					"comment": {
-						"summary": [
-							{
-								"kind": "text",
-								"text": "Cookie path ('/')"
-							}
-						]
-					},
-					"sources": [
-						{
-							"fileName": "src/types.d.ts",
-							"line": 193,
-							"character": 5,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L193"
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
 					"id": 141,
-					"name": "MAX_AGE",
-					"variant": "declaration",
-					"kind": 32,
-					"flags": {},
-					"comment": {
-						"summary": [
-							{
-								"kind": "text",
-								"text": "Cookie max age in seconds (30 days)"
-							}
-						]
-					},
-					"sources": [
-						{
-							"fileName": "src/types.d.ts",
-							"line": 191,
-							"character": 5,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L191"
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 147,
 					"name": "Window",
 					"variant": "declaration",
 					"kind": 32,
@@ -4840,16 +4742,16 @@
 							"character": 14
 						},
 						{
-							"fileName": "src/types.d.ts",
+							"fileName": "src/types.ts",
 							"line": 183,
 							"character": 11,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L183"
+							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L183"
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 148,
+							"id": 142,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
@@ -4863,7 +4765,7 @@
 							],
 							"signatures": [
 								{
-									"id": 149,
+									"id": 143,
 									"name": "Window",
 									"variant": "signature",
 									"kind": 16384,
@@ -4877,7 +4779,7 @@
 									],
 									"type": {
 										"type": "reference",
-										"target": 150,
+										"target": 144,
 										"name": "Window",
 										"package": "typescript"
 									}
@@ -4891,9 +4793,7 @@
 				{
 					"title": "Variables",
 					"children": [
-						142,
-						141,
-						147
+						141
 					]
 				},
 				{
@@ -4906,7 +4806,7 @@
 						55,
 						58,
 						41,
-						150
+						144
 					]
 				},
 				{
@@ -4923,141 +4823,10 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/types.d.ts",
+					"fileName": "src/types.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.d.ts#L1"
-				}
-			]
-		},
-		{
-			"id": 144,
-			"name": "utils/globals",
-			"variant": "declaration",
-			"kind": 2,
-			"flags": {},
-			"children": [
-				{
-					"id": 146,
-					"name": "COOKIE_PATH",
-					"variant": "declaration",
-					"kind": 32,
-					"flags": {
-						"isConst": true
-					},
-					"comment": {
-						"summary": [
-							{
-								"kind": "text",
-								"text": "Default cookie path"
-							}
-						],
-						"blockTags": [
-							{
-								"tag": "@constant",
-								"content": []
-							},
-							{
-								"tag": "@default",
-								"content": [
-									{
-										"kind": "code",
-										"text": "```ts\n'/'\n```"
-									}
-								]
-							}
-						]
-					},
-					"sources": [
-						{
-							"fileName": "src/utils/globals.ts",
-							"line": 42,
-							"character": 13,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/utils/globals.ts#L42"
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"defaultValue": "globalThis.COOKIE_PATH"
-				},
-				{
-					"id": 145,
-					"name": "MAX_AGE",
-					"variant": "declaration",
-					"kind": 32,
-					"flags": {
-						"isConst": true
-					},
-					"comment": {
-						"summary": [
-							{
-								"kind": "text",
-								"text": "Default cookie expiration time in seconds"
-							}
-						],
-						"blockTags": [
-							{
-								"tag": "@constant",
-								"content": []
-							},
-							{
-								"tag": "@default",
-								"content": [
-									{
-										"kind": "code",
-										"text": "```ts\n2592000 (30 days)\n```"
-									}
-								]
-							}
-						]
-					},
-					"sources": [
-						{
-							"fileName": "src/utils/globals.ts",
-							"line": 35,
-							"character": 13,
-							"url": "https://github.com/munirmardinli/react-utils/blob/main/src/utils/globals.ts#L35"
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					},
-					"defaultValue": "globalThis.MAX_AGE"
-				}
-			],
-			"groups": [
-				{
-					"title": "Variables",
-					"children": [
-						146,
-						145
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/utils/globals.ts",
-					"line": 1,
-					"character": 0,
-					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/utils/globals.ts#L1"
-				}
-			]
-		},
-		{
-			"id": 143,
-			"name": "utils/globals.test",
-			"variant": "declaration",
-			"kind": 2,
-			"flags": {},
-			"sources": [
-				{
-					"fileName": "src/utils/globals.test.ts",
-					"line": 1,
-					"character": 0,
-					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/utils/globals.test.ts#L1"
+					"url": "https://github.com/munirmardinli/react-utils/blob/main/src/types.ts#L1"
 				}
 			]
 		}
@@ -5077,14 +4846,12 @@
 				30,
 				32,
 				34,
-				36,
-				144,
-				143
+				36
 			]
 		}
 	],
 	"packageName": "@munirmardinli_org/react-utils",
-	"packageVersion": "1.0.10",
+	"packageVersion": "1.0.14",
 	"readme": [
 		{
 			"kind": "text",
@@ -5437,685 +5204,645 @@
 		},
 		"36": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": ""
 		},
 		"37": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.ChangeLanguage"
 		},
 		"38": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.ChangeLanguage.T"
 		},
 		"39": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.ChangeLanguage.__index"
 		},
 		"41": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.User"
 		},
 		"42": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.User.T"
 		},
 		"43": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.User.__index"
 		},
 		"45": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.BreakpointResult"
 		},
 		"46": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.BreakpointResult.isMobile"
 		},
 		"47": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.BreakpointResult.isTablet"
 		},
 		"48": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.BreakpointResult.isDesktop"
 		},
 		"49": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.BreakpointResult.current"
 		},
 		"50": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.AuthHookResult"
 		},
 		"51": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.AuthHookResult.user"
 		},
 		"52": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.AuthHookResult.isLoading"
 		},
 		"53": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.AuthHookResult.error"
 		},
 		"54": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.AuthHookResult.T"
 		},
 		"55": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.UsePostParams"
 		},
 		"56": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.UsePostParams.path"
 		},
 		"57": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.UsePostParams.body"
 		},
 		"58": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.UsePostResult"
 		},
 		"59": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.UsePostResult.data"
 		},
 		"60": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.UsePostResult.error"
 		},
 		"61": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.UsePostResult.loading"
 		},
 		"62": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.UsePostResult.sendPostRequest"
 		},
 		"63": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"64": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"65": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.UsePostResult.T"
 		},
 		"66": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.DecodedToken"
 		},
 		"67": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.DecodedToken.user"
 		},
 		"68": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.DecodedToken.exp"
 		},
 		"69": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.DecodedToken.iat"
 		},
 		"70": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.DecodedToken.T"
 		},
 		"71": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.ChangeLanguageState"
 		},
 		"73": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.languageSelected"
 		},
 		"74": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.languageChangedManually"
 		},
 		"75": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.changelanguage"
 		},
 		"76": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.setLanguage"
 		},
 		"77": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"78": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"79": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "lang"
 		},
 		"80": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "manually"
 		},
 		"81": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.setChangelanguage"
 		},
 		"82": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"83": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"84": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "data"
 		},
 		"85": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.ThemeStore"
 		},
 		"87": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.mode"
 		},
 		"88": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.language"
 		},
 		"89": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.highContrast"
 		},
 		"90": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.toggleMode"
 		},
 		"91": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"92": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"93": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.setMode"
 		},
 		"94": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"95": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"96": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "mode"
 		},
 		"97": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.setLanguage"
 		},
 		"98": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"99": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"100": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "language"
 		},
 		"101": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.toggleHighContrast"
 		},
 		"102": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"103": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"104": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.setHighContrast"
 		},
 		"105": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"106": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"107": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "highContrast"
 		},
 		"108": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.SnackbarState"
 		},
 		"110": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.snack"
 		},
 		"111": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"112": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.message"
 		},
 		"113": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.severity"
 		},
 		"114": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.open"
 		},
 		"115": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.setSnack"
 		},
 		"116": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"117": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"118": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "message"
 		},
 		"119": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "severity"
 		},
 		"120": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.closeSnack"
 		},
 		"121": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"122": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"123": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.SelectedLanguageMenuState"
 		},
 		"125": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.selectedLanguage"
 		},
 		"126": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.setSelectedLanguage"
 		},
 		"127": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"128": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"129": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "language"
 		},
 		"130": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.CookieState"
 		},
 		"132": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.authToken"
 		},
 		"133": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.setAuthToken"
 		},
 		"134": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"135": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"136": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "token"
 		},
 		"137": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type.removeAuthToken"
 		},
 		"138": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"139": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__type"
 		},
 		"140": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
+			"packagePath": "src/types.ts",
 			"qualifiedName": "__global.Breakpoint"
 		},
 		"141": {
-			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "__global.MAX_AGE"
+			"packageName": "typescript",
+			"packagePath": "lib/lib.dom.d.ts",
+			"qualifiedName": "Window"
 		},
 		"142": {
-			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "__global.COOKIE_PATH"
+			"packageName": "typescript",
+			"packagePath": "lib/lib.dom.d.ts",
+			"qualifiedName": "__type"
 		},
 		"143": {
-			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/utils/globals.test.ts",
-			"qualifiedName": ""
+			"packageName": "typescript",
+			"packagePath": "lib/lib.dom.d.ts",
+			"qualifiedName": "__type"
 		},
 		"144": {
-			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/utils/globals.ts",
-			"qualifiedName": ""
+			"packageName": "typescript",
+			"packagePath": "lib/lib.dom.d.ts",
+			"qualifiedName": "Window"
 		},
 		"145": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/utils/globals.ts",
-			"qualifiedName": "MAX_AGE"
+			"packagePath": "src/types.ts",
+			"qualifiedName": "__global.Window.MAX_AGE"
 		},
 		"146": {
 			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/utils/globals.ts",
-			"qualifiedName": "COOKIE_PATH"
+			"packagePath": "src/types.ts",
+			"qualifiedName": "__global.Window.COOKIE_PATH"
 		},
 		"147": {
 			"packageName": "typescript",
 			"packagePath": "lib/lib.dom.d.ts",
-			"qualifiedName": "Window"
-		},
-		"148": {
-			"packageName": "typescript",
-			"packagePath": "lib/lib.dom.d.ts",
-			"qualifiedName": "__type"
-		},
-		"149": {
-			"packageName": "typescript",
-			"packagePath": "lib/lib.dom.d.ts",
-			"qualifiedName": "__type"
-		},
-		"150": {
-			"packageName": "typescript",
-			"packagePath": "lib/lib.dom.d.ts",
-			"qualifiedName": "Window"
-		},
-		"151": {
-			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "__global.Window.MAX_AGE"
-		},
-		"152": {
-			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/types.d.ts",
-			"qualifiedName": "__global.Window.COOKIE_PATH"
-		},
-		"153": {
-			"packageName": "typescript",
-			"packagePath": "lib/lib.dom.d.ts",
 			"qualifiedName": "Window.__index"
 		},
-		"155": {
+		"149": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "changeLanguageStore"
 		},
-		"156": {
+		"150": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "useChangeLanguageStore"
 		},
-		"157": {
+		"151": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "useThemeStore"
 		},
-		"158": {
+		"152": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "useSelectedLanguageMenuStore"
 		},
-		"159": {
+		"153": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "useSnackStore"
 		},
-		"160": {
+		"154": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "useSCookieStore"
 		},
-		"161": {
+		"155": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "useAuthHook"
 		},
-		"162": {
+		"156": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "useBreakpoint"
 		},
-		"163": {
+		"157": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "useLanguageEffect"
 		},
-		"164": {
+		"158": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "usePost"
 		},
-		"165": {
+		"159": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "useThemeFromCookies"
 		},
-		"166": {
-			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/index.ts",
-			"qualifiedName": "MAX_AGE"
-		},
-		"167": {
-			"packageName": "@munirmardinli_org/react-utils",
-			"packagePath": "src/index.ts",
-			"qualifiedName": "COOKIE_PATH"
-		},
-		"168": {
+		"160": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "ChangeLanguage"
 		},
-		"169": {
+		"161": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "User"
 		},
-		"170": {
+		"162": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "BreakpointResult"
 		},
-		"171": {
+		"163": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthHookResult"
 		},
-		"172": {
+		"164": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "DecodedToken"
 		},
-		"173": {
+		"165": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "ChangeLanguageState"
 		},
-		"174": {
+		"166": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "ThemeStore"
 		},
-		"175": {
+		"167": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "SnackbarState"
 		},
-		"176": {
+		"168": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "SelectedLanguageMenuState"
 		},
-		"177": {
+		"169": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "CookieState"
 		},
-		"178": {
+		"170": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "Breakpoint"
 		},
-		"179": {
+		"171": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "UsePostParams"
 		},
-		"180": {
+		"172": {
 			"packageName": "@munirmardinli_org/react-utils",
 			"packagePath": "src/index.ts",
 			"qualifiedName": "UsePostResult"
@@ -6134,9 +5861,7 @@
 			"9": "src/stores/selectedLanguageMenuStore.ts",
 			"10": "src/stores/snackbarStore.ts",
 			"11": "src/stores/useCookieStore.ts",
-			"12": "src/types.d.ts",
-			"13": "src/utils/globals.test.ts",
-			"14": "src/utils/globals.ts"
+			"12": "src/types.ts"
 		},
 		"reflections": {
 			"1": 1,
@@ -6150,9 +5875,7 @@
 			"9": 30,
 			"10": 32,
 			"11": 34,
-			"12": 36,
-			"13": 143,
-			"14": 144
+			"12": 36
 		}
 	}
 }
