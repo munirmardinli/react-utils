@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/munirmardinli/react-utils/compare/v1.4.0...v1.4.1) (2025-06-26)
+
+
+### Bug Fixes
+
+* bug fix tsconfig invalid file ([9e77376](https://github.com/munirmardinli/react-utils/commit/9e773763050cc6aa3cb1554888ee9a8194cb6b0e))
+
 # [1.4.0](https://github.com/munirmardinli/react-utils/compare/v1.3.0...v1.4.0) (2025-06-26)
 
 
