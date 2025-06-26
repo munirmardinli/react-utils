@@ -6,6 +6,7 @@ A collection of essential React hooks, state management utilities, and helper fu
 [![GitHub Version](https://img.shields.io/github/package-json/v/munirmardinli/react-utils?color=green&label=version)](https://github.com/munirmardinli/react-utils)
 [![TypeScript](https://img.shields.io/badge/lang-typescript-3178C6.svg)](https://www.typescriptlang.org/)
 [![Docs](https://img.shields.io/badge/docs-typedoc-blueviolet.svg)](https://munirmardinli.github.io/react-utils//)
+[![npm](https://img.shields.io/npm/v/@munirmardinli_org/react-utils)](https://www.npmjs.com/package/@munirmardinli_org/react-utils)
 [![GitHub Issues](https://img.shields.io/github/issues/munirmardinli/react-utils)](https://github.com/munirmardinli/react-utils/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/munirmardinli/react-utils)](https://github.com/munirmardinli/react-utils/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/munirmardinli/react-utils)](https://github.com/munirmardinli/react-utils/network/members)
