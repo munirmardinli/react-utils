@@ -110,6 +110,8 @@ jobs:
      uses: codecov/codecov-action@v5
      with:
       token: ${{ secrets.CODECOV_TOKEN }}
+      directory: docs/coverage
+      verbose: true
    - name: Deploy to gh-pages branch
      uses: peaceiris/actions-gh-pages@v4
      with:

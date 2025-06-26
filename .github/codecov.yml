@@ -31,3 +31,4 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           directory: docs/coverage
           verbose: true
+          debug: true
