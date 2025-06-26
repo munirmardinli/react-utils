@@ -3,6 +3,7 @@ import { setCookie, parseCookies } from 'nookies';
 import { create } from 'zustand';
 
 const COOKIE_PATH = '/';
+const COOKIE_NAME = 'authentication';
 /**
  * Zustand store for managing authentication token cookies in a Next.js application.
  * Handles both client-side and server-side token persistence with secure cookie settings.
@@ -46,7 +47,7 @@ export const useSCookieStore = create<CookieState>((set) => ({
 	 */
 	setAuthToken: (token: string) => {
 		set({ authToken: token });
-		setCookie(null, 'authentication', token, {
+		setCookie(null, COOKIE_NAME, token, {
 			path: COOKIE_PATH,
 			secure: process.env.NODE_ENV === 'production',
 			sameSite: 'Lax',
@@ -62,6 +63,6 @@ export const useSCookieStore = create<CookieState>((set) => ({
 	 */
 	removeAuthToken: (): void => {
 		set({ authToken: null });
-		setCookie(null, 'authentication', '', { path: COOKIE_PATH, maxAge: -1 });
+		setCookie(null, COOKIE_NAME, '', { path: COOKIE_PATH, maxAge: -1 });
 	},
 }));

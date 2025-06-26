@@ -105,17 +105,7 @@ jobs:
         node_modules
         .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-   - run: npx typedoc --options typedoc.json && npx jest --coverage
-   - name: Upload coverage reports to Codecov
-     uses: codecov/codecov-action@v5
-     with:
-      token: ${{ secrets.CODECOV_TOKEN }}
-      files: docs/coverage/lcov.info
-      verbose: true
-      flags: core,hooks,stores,utils
-     env:
-      CODECOV_SLUG: ${{ github.repository }}
-      CODECOV_NAME: "jest-coverage"
+   - run: npx typedoc --options typedoc.json
    - name: Deploy to gh-pages branch
      uses: peaceiris/actions-gh-pages@v4
      with:

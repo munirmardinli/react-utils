@@ -15,18 +15,18 @@ export { usePost } from "./hooks/usePostRequest.js";
 export { useThemeFromCookies } from "./hooks/useThemeFromCookies.js";
 import 'dotenv/config'
 
-export type {
-  ChangeLanguage,
-  User,
-  BreakpointResult,
-  AuthHookResult,
-  DecodedToken,
-  ChangeLanguageState,
-  ThemeStore,
-  SnackbarState,
-  SelectedLanguageMenuState,
-  CookieState,
-  Breakpoint,
-  UsePostParams,
-  UsePostResult
+export {
+	type ChangeLanguage,
+	type User,
+	type BreakpointResult,
+	type AuthHookResult,
+	type DecodedToken,
+	type ChangeLanguageState,
+	type ThemeStore,
+	type SnackbarState,
+	type SelectedLanguageMenuState,
+	type CookieState,
+	type Breakpoint,
+	type UsePostParams,
+	type UsePostResult
 };

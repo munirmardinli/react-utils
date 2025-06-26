@@ -23,8 +23,8 @@ declare global {
 	* User profile interface with generic type support
 	* @template T - Optional generic type for user properties
 	*/
-	interface User<T = Record<string | null, unknown>> {
-		[key: string | null]: unknown;
+	interface User<T = Record<string, unknown>> {
+		[key: string]: unknown;
 	}
 
 	/**

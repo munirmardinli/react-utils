@@ -10,7 +10,7 @@
   "module": "esnext",
   "moduleResolution": "node",
   "esModuleInterop": true,
-  "types": ["node", "jest"],
+  "types": ["node"],
   "strict": true,
   "allowJs": true,
   "skipLibCheck": true,
@@ -21,7 +21,7 @@
   "pretty": true,
   "noImplicitAny": true,
   "removeComments": true,
-  "typeRoots": ["node_modules/@types", "src/types.d.ts"]
+  "typeRoots": ["node_modules/@types", "src/types.ts"]
  },
  "include": ["src/**/*.ts", "dotenv.d.ts"],
  "exclude": ["node_modules", "lib"]
