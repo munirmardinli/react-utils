@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/munirmardinli/react-utils/compare/v1.4.1...v1.4.2) (2025-06-26)
+
+
+### Bug Fixes
+
+* bug fix type path ([5392d27](https://github.com/munirmardinli/react-utils/commit/5392d27a16b2a5f4035f8c2860327f3548f9750d))
+
 ## [1.4.1](https://github.com/munirmardinli/react-utils/compare/v1.4.0...v1.4.1) (2025-06-26)
 
 
