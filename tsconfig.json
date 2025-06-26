@@ -23,6 +23,6 @@
   "removeComments": true,
   "typeRoots": ["node_modules/@types", "src/types.d.ts"]
  },
- "include": ["src/**/*.ts", "dotenv.d.ts", "test/stores/selectedLanguageMenuStore.test.ts"],
+ "include": ["src/**/*.ts", "dotenv.d.ts"],
  "exclude": ["node_modules", "lib"]
 }
