@@ -26,7 +26,7 @@
 		}
 	},
 	"main": "lib/index.js",
-	"types": "lib/index.d.ts",
+	"types": "lib/types/index.d.ts",
 	"license": "MIT",
 	"homepage": "https://munirmardinli.github.io/react-utils",
 	"bugs": {
