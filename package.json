@@ -79,7 +79,7 @@
 		"next": "^15.2.4",
 		"nookies": "^2.5.2",
 		"react": "^19",
-		"zustand": "^4.5.4"
+		"zustand": "^5.0.5"
 	},
 	"tsdocsOptions": {
 		"changelog": true
