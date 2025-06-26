@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/munirmardinli/react-utils/compare/v1.0.3...v1.1.0) (2025-06-26)
+
+
+### Bug Fixes
+
+* bug fix Upload artifacts ([7b406a5](https://github.com/munirmardinli/react-utils/commit/7b406a512056ae481d302dc1505915991da4970b))
+
+
+### Features
+
+* init jest and fix autor jsdocs ([a613008](https://github.com/munirmardinli/react-utils/commit/a613008bc2c9fceb389779a1b428a4d9b2ed5d37))
+
 ## [1.0.3](https://github.com/munirmardinli/react-utils/compare/v1.0.2...v1.0.3) (2025-06-26)
 
 ## [1.0.2](https://github.com/munirmardinli/react-utils/compare/v1.0.1...v1.0.2) (2025-06-26)
