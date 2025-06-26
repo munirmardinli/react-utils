@@ -2,6 +2,7 @@
 import { parseCookies, setCookie } from 'nookies';
 import { create } from 'zustand';
 import { persist, devtools } from 'zustand/middleware';
+import { type SelectedLanguageMenuState } from '../types/index.js';
 
 const COOKIE_PATH = '/';
 /**
@@ -34,7 +35,7 @@ export const useSelectedLanguageMenuStore = create<SelectedLanguageMenuState>()(
 					// Server-side rendering fallback
 					if (typeof window !== 'undefined') {
 						const cookies = parseCookies();
-						return cookies.languageMenu || 'de';
+						return cookies?.["languageMenu"] || 'de';
 					}
 					return 'de';
 				})(),

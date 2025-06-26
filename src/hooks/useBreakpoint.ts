@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { type Breakpoint, type BreakpointResult } from '../types/index.js';
 
 /**
  * Custom hook to track and respond to viewport breakpoint changes.

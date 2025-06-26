@@ -1,6 +1,6 @@
 {
 	"name": "@munirmardinli_org/react-utils",
-	"version": "1.0.14",
+	"version": "1.0.19",
 	"private": false,
 	"sideEffects": false,
 	"type": "module",
@@ -17,7 +17,8 @@
 	"exports": {
 		".": {
 			"import": "./lib/index.js",
-			"require": "./lib/index.js"
+			"require": "./lib/index.cjs",
+			"types": "./lib/types/index.d.ts"
 		}
 	},
 	"config": {

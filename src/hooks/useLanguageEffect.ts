@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import {
 	changeLanguageStore,
 	useChangeLanguageStore,
-} from '../stores/changeLanguageStore';
+} from '../stores/changeLanguageStore.js';
 
 const COOKIE_PATH = '/';
 const MAX_AGE = 30 * 24 * 60 * 60;
@@ -52,7 +52,7 @@ export const useLanguageEffect = () => {
 		const fetchLanguage = async () => {
 			try {
 				const res = await fetch(
-					`${process.env.NEXT_PUBLIC_API_URL}/language/${languageSelected}.json`,
+					`${process.env?.["NEXT_PUBLIC_API_URL"]}/language/${languageSelected}.json`,
 				);
 				if (!res.ok) {
 					throw new Error('Sprache konnte nicht geladen werden');
@@ -83,7 +83,7 @@ export const useLanguageEffect = () => {
 	 */
 	useEffect(() => {
 		const cookies = parseCookies();
-		const stored = cookies.languageSelected;
+		const stored = cookies?.["languageSelected"];
 
 		if (stored && stored !== languageSelected) {
 			changeLanguageStore.getState().setLanguage(stored);

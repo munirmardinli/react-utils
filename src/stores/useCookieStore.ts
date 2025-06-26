@@ -1,6 +1,7 @@
 'use client';
 import { setCookie, parseCookies } from 'nookies';
 import { create } from 'zustand';
+import { type CookieState } from '../types/index.js';
 
 const COOKIE_PATH = '/';
 const COOKIE_NAME = 'authentication';
@@ -33,7 +34,7 @@ export const useSCookieStore = create<CookieState>((set) => ({
 	 */
 	authToken:
 		typeof window !== 'undefined'
-			? parseCookies().authentication || null
+			? parseCookies()?.["authentication"] || null
 			: null,
 	/**
 	 * Stores a new authentication token in both state and cookies

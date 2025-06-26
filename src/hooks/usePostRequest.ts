@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { type UsePostParams, type UsePostResult, type User } from '../types/index.js';
 
 /**
  * Custom hook for making POST requests with type safety and state management
@@ -64,7 +65,7 @@ export const usePost = <T = User>({
 		setError(null);
 
 		try {
-			const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/${path}`, {
+			const res = await fetch(`${process.env?.["NEXT_PUBLIC_API_URL"]}/${path}`, {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',

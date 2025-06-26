@@ -1,8 +1,8 @@
-import { PaletteMode } from '@mui/material';
+import { type PaletteMode } from '@mui/material';
 import { parseCookies } from 'nookies';
 import { useEffect } from 'react';
 
-import { useThemeStore } from '../stores/changeModeStore';
+import { useThemeStore } from '../stores/changeModeStore.js';
 
 /**
  * Custom hook for synchronizing theme preferences between cookies and application state
@@ -40,8 +40,8 @@ export const useThemeFromCookies = () => {
 	*/
 	useEffect(() => {
 		const cookies = parseCookies();
-		const initialMode = (cookies.createTheme as PaletteMode) ?? 'dark';
-		const initialHighContrast = cookies.highContrast === 'true';
+		const initialMode = (cookies?.["createTheme"] as PaletteMode) ?? 'dark';
+		const initialHighContrast = cookies?.["highContrast"] === 'true';
 
 		setMode(initialMode);
 		setHighContrast(initialHighContrast);
@@ -57,7 +57,7 @@ export const useThemeFromCookies = () => {
 		const cookies = parseCookies();
 		document.documentElement.setAttribute(
 			'createTheme',
-			cookies.createTheme || 'dark',
+			cookies?.["createTheme"] || 'dark',
 		);
 	}, []);
 };

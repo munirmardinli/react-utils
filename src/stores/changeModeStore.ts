@@ -2,9 +2,14 @@
 import { setCookie } from 'nookies';
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
+import { type ThemeStore } from '../types/index.js';
 
 const COOKIE_PATH = '/';
 const MAX_AGE = 30 * 24 * 60 * 60;
+const CREATE_THEME = 'createTheme';
+const HIGH_CONTRAST = 'highContrast'
+const HIGH_CONTRAST_OBSERVE = 'high-contrast'
+
 /**
  * Zustand store for managing application theme settings including:
  * - Color mode (light/dark)
@@ -44,11 +49,11 @@ export const useThemeStore = create<ThemeStore>()(
 			toggleMode: (): void =>
 				set((state) => {
 					const newMode = state.mode === 'dark' ? 'light' : 'dark';
-					setCookie(null, 'createTheme', newMode, {
+					setCookie(null, CREATE_THEME, newMode, {
 						maxAge: MAX_AGE,
 						path: COOKIE_PATH,
 					});
-					document.documentElement.setAttribute('createTheme', newMode);
+					document.documentElement.setAttribute(CREATE_THEME, newMode);
 					return { mode: newMode };
 				}),
 			/**
@@ -57,11 +62,11 @@ export const useThemeStore = create<ThemeStore>()(
 			 * @returns {void}
 			 */
 			setMode: (mode): void => {
-				setCookie(null, 'createTheme', mode, {
+				setCookie(null, CREATE_THEME, mode, {
 					maxAge: MAX_AGE,
 					path: COOKIE_PATH,
 				});
-				document.documentElement.setAttribute('createTheme', mode);
+				document.documentElement.setAttribute(CREATE_THEME, mode);
 				set({ mode });
 			},
 			/**
@@ -78,14 +83,14 @@ export const useThemeStore = create<ThemeStore>()(
 			toggleHighContrast: (): void =>
 				set((state) => {
 					const newHighContrast = !state.highContrast;
-					setCookie(null, 'highContrast', String(newHighContrast), {
+					setCookie(null, HIGH_CONTRAST, String(newHighContrast), {
 						maxAge: MAX_AGE,
 						path: COOKIE_PATH,
 					});
 					if (newHighContrast) {
-						document.body.classList.add('high-contrast');
+						document.body.classList.add(HIGH_CONTRAST_OBSERVE);
 					} else {
-						document.body.classList.remove('high-contrast');
+						document.body.classList.remove(HIGH_CONTRAST_OBSERVE);
 					}
 					return { highContrast: newHighContrast };
 				}),
@@ -95,14 +100,14 @@ export const useThemeStore = create<ThemeStore>()(
 			 * @returns {void}
 			 */
 			setHighContrast: (highContrast): void => {
-				setCookie(null, 'highContrast', String(highContrast), {
+				setCookie(null, HIGH_CONTRAST, String(highContrast), {
 					maxAge: MAX_AGE,
 					path: COOKIE_PATH,
 				});
 				if (highContrast) {
-					document.body.classList.add('high-contrast');
+					document.body.classList.add(HIGH_CONTRAST_OBSERVE);
 				} else {
-					document.body.classList.remove('high-contrast');
+					document.body.classList.remove(HIGH_CONTRAST_OBSERVE);
 				}
 				set({ highContrast });
 			},

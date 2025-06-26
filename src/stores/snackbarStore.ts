@@ -1,5 +1,6 @@
 'use client';
 import { create } from 'zustand';
+import { type SnackbarState } from '../types/index.js';
 
 /**
  * Zustand store for managing snackbar/notification state throughout the application.

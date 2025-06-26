@@ -3,7 +3,8 @@ import { jwtDecode } from 'jwt-decode';
 import { parseCookies } from 'nookies';
 import { useEffect, useState } from 'react';
 
-import { useSCookieStore } from '../stores/useCookieStore';
+import { useSCookieStore } from '../stores/useCookieStore.js';
+import { type AuthHookResult, type DecodedToken, type User } from '../types/index.js';
 
 /**
  * Custom hook for handling authentication state and token validation.
@@ -42,7 +43,7 @@ export const useAuthHook = (): AuthHookResult => {
 
 		try {
 			const cookies = parseCookies();
-			const tokenWithBearer = cookies.authentication;
+			const tokenWithBearer = cookies?.["authentication"];
 			// Validate token presence and format
 			if (!tokenWithBearer?.startsWith('Bearer ')) {
 				setIsLoading(false);
