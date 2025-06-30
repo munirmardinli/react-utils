@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/munirmardinli/react-utils/compare/v1.5.0...v1.6.0) (2025-06-30)
+
+
+### Features
+
+* add codecov and more slugs in readme ([b4104d7](https://github.com/munirmardinli/react-utils/commit/b4104d71b9b2466ee76045f91b775237379780ea))
+
 # [1.5.0](https://github.com/munirmardinli/react-utils/compare/v1.4.4...v1.5.0) (2025-06-30)
 
 
