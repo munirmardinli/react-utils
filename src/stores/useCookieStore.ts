@@ -1,29 +1,34 @@
 'use client';
 import { setCookie, parseCookies } from 'nookies';
 import { create } from 'zustand';
-import { type CookieState } from '../types/index.js';
+import { type CookieState } from '../types/index';
 
 const COOKIE_PATH = '/';
 const COOKIE_NAME = 'authentication';
 /**
+ * @module CookieStore
+ * @author Munir Mardinli
+ *
  * Zustand store for managing authentication token cookies in a Next.js application.
  * Handles both client-side and server-side token persistence with secure cookie settings.
  *
- * @module CookieStore
- *
- * @author Munir Mardinli
- * @date 2025-06-06
  * @property {string|null} authToken - Current authentication token (null if not authenticated)
- * @method setAuthToken - Stores a new authentication token
- * @method removeAuthToken - Clears the current authentication token
+ * @property {Function} setAuthToken - Stores a new authentication token
+ * @property {Function} removeAuthToken - Clears the current authentication token
  *
  * @example
- * // Set new auth token:
- * const { setAuthToken } = useSCookieStore();
- * setAuthToken('abc123xyz');
+ * // Access the store in a React component
+ * import { useSCookieStore } from './useCookieStore';
+ * const token = useSCookieStore(state => state.authToken);
  *
- * // Remove auth token:
- * const { removeAuthToken } = useSCookieStore();
+ * @example
+ * // Set a new token
+ * const setAuthToken = useSCookieStore(state => state.setAuthToken);
+ * setAuthToken('my-token');
+ *
+ * @example
+ * // Remove the token
+ * const removeAuthToken = useSCookieStore(state => state.removeAuthToken);
  * removeAuthToken();
  */
 export const useSCookieStore = create<CookieState>((set) => ({

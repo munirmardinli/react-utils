@@ -2,7 +2,7 @@
 import { setCookie } from 'nookies';
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
-import { type ThemeStore } from '../types/index.js';
+import { type ThemeStore } from '../types/index';
 
 const COOKIE_PATH = '/';
 const MAX_AGE = 30 * 24 * 60 * 60;
@@ -11,30 +11,29 @@ const HIGH_CONTRAST = 'highContrast'
 const HIGH_CONTRAST_OBSERVE = 'high-contrast'
 
 /**
- * Zustand store for managing application theme settings including:
- * - Color mode (light/dark)
- * - Language preference
- * - High contrast mode
- *
- * @module ThemeStore
+ * @module ChangeModeStore
  * @author Munir Mardinli
- * @date 2025-06-06
+ *
+ * Zustand store for managing theme (light/dark), language, and high contrast mode.
+ *
  * @property {PaletteMode} mode - Current color mode ('light' or 'dark')
  * @property {string} language - Current language preference
- * @property {boolean} highContrast - High contrast mode status
- *
- * @method toggleMode - Toggles between light and dark mode
- * @method setMode - Explicitly sets the color mode
- * @method setLanguage - Sets the language preference
- * @method toggleHighContrast - Toggles high contrast mode
- * @method setHighContrast - Explicitly sets high contrast mode
+ * @property {boolean} highContrast - High contrast mode enabled
+ * @property {Function} toggleMode - Toggles between light and dark mode
+ * @property {Function} setMode - Explicitly sets the color mode
+ * @property {Function} setLanguage - Sets the language preference
+ * @property {Function} toggleHighContrast - Toggles high contrast mode
+ * @property {Function} setHighContrast - Explicitly sets high contrast mode
  *
  * @example
- * // In component:
- * const { mode, toggleMode } = useThemeStore();
+ * // Access the store in a React component
+ * import { useThemeStore } from './changeModeStore';
+ * const mode = useThemeStore(state => state.mode);
  *
- * // Toggle mode:
- * <button onClick={toggleMode}>Toggle Theme</button>
+ * @example
+ * // Toggle dark/light mode
+ * const toggleMode = useThemeStore(state => state.toggleMode);
+ * toggleMode();
  */
 export const useThemeStore = create<ThemeStore>()(
 	persist(

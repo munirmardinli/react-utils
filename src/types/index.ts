@@ -1,3 +1,7 @@
+/**
+ * @author Munir Mardinli
+ * @date 2025-06-06
+ */
 
 import type { PaletteMode } from '@mui/material';
 

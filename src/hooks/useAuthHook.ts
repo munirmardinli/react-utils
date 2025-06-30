@@ -3,8 +3,8 @@ import { jwtDecode } from 'jwt-decode';
 import { parseCookies } from 'nookies';
 import { useEffect, useState } from 'react';
 
-import { useSCookieStore } from '../stores/useCookieStore.js';
-import { type AuthHookResult, type DecodedToken, type User } from '../types/index.js';
+import { useSCookieStore } from '../stores/useCookieStore';
+import { type AuthHookResult, type DecodedToken, type User } from '../types/index';
 
 /**
  * Custom hook for handling authentication state and token validation.
@@ -25,8 +25,8 @@ import { type AuthHookResult, type DecodedToken, type User } from '../types/inde
  * interface CustomUser extends User<{ email: string }> {}
  * const { user } = useAuthHook<CustomUser>();
  *
- * @see {@link AuthHookResult} for return type structure
- * @see {@link User} for base user type that can be extended
+ * @see AuthHookResult for return type structure
+ * @see User for base user type that can be extended
  */
 export const useAuthHook = (): AuthHookResult => {
 	const [user, setUser] = useState<User | null>(null);

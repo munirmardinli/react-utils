@@ -1,14 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { type UsePostParams, type UsePostResult, type User } from '../types/index.js';
+import { type UsePostParams, type UsePostResult, type User } from '../types/index';
 
 /**
  * Custom hook for making POST requests with type safety and state management
  *
- * @author Munir Mardinli
- * @date 2025-06-06
- * @template T - The expected response type (defaults to User)
  * @param {UsePostParams} params - Configuration object for the request
  * @param {string} params.path - API endpoint path (appended to base URL)
  * @param {object} [params.body] - Optional request body to be JSON stringified
@@ -43,8 +40,8 @@ import { type UsePostParams, type UsePostResult, type User } from '../types/inde
  *   if (error) showToast(error);
  * }, [error]);
  *
- * @see {@link UsePostParams} for parameter structure
- * @see {@link UsePostResult} for return type structure
+ * @see UsePostParams for parameter structure
+ * @see UsePostResult for return type structure
  */
 export const usePost = <T = User>({
 	path,

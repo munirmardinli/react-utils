@@ -1,23 +1,23 @@
 'use client';
 import { create } from 'zustand';
-import { type SnackbarState } from '../types/index.js';
+import { type SnackbarState } from '../types/index';
 
 /**
- * Zustand store for managing snackbar/notification state throughout the application.
- * Provides simple controls for showing and hiding temporary user messages.
- *
  * @module SnackbarStore
  * @author Munir Mardinli
- * @date 2025-06-06
+ *
+ * Zustand store for managing snackbar notifications.
+ *
  * @property {Object} snack - Current snackbar state
  * @property {string} snack.message - Notification message content
  * @property {string} snack.severity - Visual style/color ('error', 'warning', 'info', 'success')
  * @property {boolean} snack.open - Visibility state
- * @method setSnack - Displays a new snackbar notification
- * @method closeSnack - Hides the current notification
+ * @property {Function} setSnack - Displays a new snackbar notification
+ * @property {Function} closeSnack - Hides the current notification
  *
  * @example
- * // Basic usage in component:
+ * // Access the store in a React component
+ * import { useSnackStore } from './snackbarStore';
  * const { setSnack } = useSnackStore();
  *
  * // Show success message:
@@ -28,12 +28,12 @@ import { type SnackbarState } from '../types/index.js';
  */
 export const useSnackStore = create<SnackbarState>()((set) => ({
 	/**
- * Current snackbar notification state
- * @type {Object}
- * @property {string} message - Display message content
- * @property {string} severity - Visual severity type
- * @property {boolean} open - Visibility flag
- */
+	 * Current snackbar notification state
+	 * @type {Object}
+	 * @property {string} message - Display message content
+	 * @property {string} severity - Visual severity type
+	 * @property {boolean} open - Visibility flag
+	 */
 	snack: { message: '', severity: '', open: false },
 	/**
 	 * Displays a new snackbar notification

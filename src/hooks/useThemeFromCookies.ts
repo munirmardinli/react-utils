@@ -2,13 +2,11 @@ import { type PaletteMode } from '@mui/material';
 import { parseCookies } from 'nookies';
 import { useEffect } from 'react';
 
-import { useThemeStore } from '../stores/changeModeStore.js';
+import { useThemeStore } from '../stores/changeModeStore';
 
 /**
  * Custom hook for synchronizing theme preferences between cookies and application state
  *
- * @author Munir Mardinli
- * @date 2025-06-06
  * @description
  * Manages theme synchronization by:
  * - Reading theme preferences from cookies on initial load
@@ -24,9 +22,9 @@ import { useThemeStore } from '../stores/changeModeStore.js';
  * const { mode } = useThemeStore();
  * useThemeFromCookies();
  *
- * @see {@link useThemeStore} For the underlying theme state management
- * @see {@link PaletteMode} For available theme modes
- * @see {@link parseCookies} For cookie parsing utility
+ * @see useThemeStore For the underlying theme state management
+ * @see PaletteMode For available theme modes
+ * @see parseCookies For cookie parsing utility
  */
 export const useThemeFromCookies = () => {
 	const { setMode, setHighContrast } = useThemeStore();

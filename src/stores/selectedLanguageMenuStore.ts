@@ -2,25 +2,28 @@
 import { parseCookies, setCookie } from 'nookies';
 import { create } from 'zustand';
 import { persist, devtools } from 'zustand/middleware';
-import { type SelectedLanguageMenuState } from '../types/index.js';
+import { type SelectedLanguageMenuState } from '../types/index';
 
 const COOKIE_PATH = '/';
 /**
+ * @module SelectedLanguageMenuStore
+ * @author Munir Mardinli
+ *
  * Zustand store for managing the selected language in the application menu.
  * Persists the selection between sessions using cookies and localStorage.
  *
- * @module SelectedLanguageMenuStore
- * @author Munir Mardinli
- * @date 2025-06-06
  * @property {string} selectedLanguage - Currently selected language code
- * @method setSelectedLanguage - Updates the selected language
+ * @property {Function} setSelectedLanguage - Updates the selected language
  *
  * @example
- * // In component:
- * const { selectedLanguage, setSelectedLanguage } = useSelectedLanguageMenuStore();
+ * // Access the store in a React component
+ * import { useSelectedLanguageMenuStore } from './selectedLanguageMenuStore';
+ * const lang = useSelectedLanguageMenuStore(state => state.selectedLanguage);
  *
- * // Set language:
- * <button onClick={() => setSelectedLanguage('en')}>English</button>
+ * @example
+ * // Change the selected language
+ * const setSelectedLanguage = useSelectedLanguageMenuStore(state => state.setSelectedLanguage);
+ * setSelectedLanguage('en');
  */
 export const useSelectedLanguageMenuStore = create<SelectedLanguageMenuState>()(
 	devtools(

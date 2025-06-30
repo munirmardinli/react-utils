@@ -1,16 +1,14 @@
 import { useState, useEffect } from 'react';
-import { type Breakpoint, type BreakpointResult } from '../types/index.js';
+import { type Breakpoint, type BreakpointResult } from '../types/index';
 
 /**
  * Custom hook to track and respond to viewport breakpoint changes.
  * Provides responsive design information based on window width.
  *
- * @author Munir Mardinli
- * @date 2025-06-06
  * @returns {BreakpointResult} An object containing:
  *   - isMobile: boolean (width < 768px)
- *   - isTablet: boolean (768px ≤ width < 1024px)
- *   - isDesktop: boolean (width ≥ 1024px)
+ *   - isTablet: boolean (768px <= width < 1024px)
+ *   - isDesktop: boolean (width >= 1024px)
  *   - current: Breakpoint type ('mobile' | 'tablet' | 'desktop')
  *
  * @example
@@ -29,14 +27,16 @@ import { type Breakpoint, type BreakpointResult } from '../types/index.js';
  *   </div>
  * );
  *
- * @see {@link BreakpointResult} for return type structure
- * @see {@link Breakpoint} for available breakpoint values
+ * @see BreakpointResult for return type structure
+ * @see Breakpoint for available breakpoint values
  */
+export function getInitialWidth(): number {
+	return typeof window !== 'undefined' ? window.innerWidth : 0;
+}
+
 export function useBreakpoint(): BreakpointResult {
 	// Initialize state with current window width (or 0 for SSR)
-	const [width, setWidth] = useState<number>(
-		typeof window !== 'undefined' ? window.innerWidth : 0,
-	);
+	const [width, setWidth] = useState<number>(getInitialWidth());
 
 	/**
 	 * Effect to handle window resize events

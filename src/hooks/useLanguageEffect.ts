@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import {
 	changeLanguageStore,
 	useChangeLanguageStore,
-} from '../stores/changeLanguageStore.js';
+} from '../stores/changeLanguageStore';
 
 const COOKIE_PATH = '/';
 const MAX_AGE = 30 * 24 * 60 * 60;
@@ -14,16 +14,11 @@ const MAX_AGE = 30 * 24 * 60 * 60;
  *
  * @version 1.0.0
  *
- * @author Munir Mardinli
- * @date 2025-06-06
  * @description
  * Handles language selection persistence by:
  * - Fetching translation files from API when language changes
  * - Synchronizing language preference with cookies
  * - Restoring language preference from cookies on initial load
- *
- * @requires nookies For cookie management
- * @requires changeLanguageStore For global language state management
  *
  * @example
  * // Basic usage in component
@@ -34,9 +29,9 @@ const MAX_AGE = 30 * 24 * 60 * 60;
  * const { languageSelected } = useChangeLanguageStore();
  * useLanguageEffect();
  *
- * @see {@link changeLanguageStore} For the underlying state management
- * @see {@link COOKIE_PATH} For cookie path configuration
- * @see {@link MAX_AGE} For cookie expiration setting
+ * @see changeLanguageStore For the underlying state management
+ * @see COOKIE_PATH For cookie path configuration
+ * @see MAX_AGE For cookie expiration setting
  */
 export const useLanguageEffect = () => {
 	const languageSelected = useChangeLanguageStore((s) => s.languageSelected);

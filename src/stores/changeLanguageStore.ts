@@ -4,32 +4,34 @@ import { useStore } from 'zustand';
 import { persist, devtools } from 'zustand/middleware';
 import { createStore } from 'zustand/vanilla';
 
-import { useThemeStore } from '../stores/changeModeStore.js';
-import { useSnackStore } from '../stores/snackbarStore.js';
-import { type ChangeLanguage, type ChangeLanguageState } from '../types/index.js';
+import { useThemeStore } from '../stores/changeModeStore';
+import { useSnackStore } from '../stores/snackbarStore';
+import { type ChangeLanguage, type ChangeLanguageState } from '../types/index';
 
 const COOKIE_PATH = '/';
 const MAX_AGE = 30 * 24 * 60 * 60;
 /**
- * Zustand store for managing application language settings and changes.
- *
  * @module ChangeLanguageStore
  * @author Munir Mardinli
- * @date 2025-06-06
+ *
+ * Zustand store for managing the application's language selection and related state.
  *
  * @property {string} languageSelected - Currently selected language code (default: 'de')
- * @property {boolean} languageChangedManually - Flag if language was changed by user
- * @property {ChangeLanguage|null} changelanguage - Callback for language changes
- *
- * @method setLanguage - Sets the application language and handles related operations
- * @method setChangelanguage - Sets the language change callback
+ * @property {boolean} languageChangedManually - Indicates if the language was changed by the user
+ * @property {Function} setLanguage - Sets the application language and handles related operations
+ * @property {Function} setChangelanguage - Sets the language change callback
  *
  * @example
- * // In component:
- * const { languageSelected, setLanguage } = useChangeLanguageStore(state => ({
- *   languageSelected: state.languageSelected,
- *   setLanguage: state.setLanguage
- * }));
+ * // Access the store in a React component
+ ```ts
+  import { useChangeLanguageStore } from './changeLanguageStore';
+  const language = useChangeLanguageStore(state => state.languageSelected);
+ ```
+ *
+ * @example
+ * // Change the language
+ * const setLanguage = useChangeLanguageStore(state => state.setLanguage);
+ * setLanguage('en', true);
  */
 export const changeLanguageStore = createStore<ChangeLanguageState>()(
 	devtools(
@@ -96,7 +98,6 @@ export const changeLanguageStore = createStore<ChangeLanguageState>()(
 /**
  * Hook to access the ChangeLanguageStore in React components
  *
- * @template T
  * @param {(state: ChangeLanguageState) => T} selector - Selector function
  * @returns {T} Selected state slice
  */
