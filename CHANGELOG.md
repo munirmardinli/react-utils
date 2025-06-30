@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/munirmardinli/react-utils/compare/v1.4.4...v1.5.0) (2025-06-30)
+
+
+### Features
+
+* add test ([3ba8e42](https://github.com/munirmardinli/react-utils/commit/3ba8e42acc2176b451e11cd8c0469cdb943aacc6))
+
 ## [1.4.4](https://github.com/munirmardinli/react-utils/compare/v1.4.3...v1.4.4) (2025-06-26)
 
 ## [1.4.3](https://github.com/munirmardinli/react-utils/compare/v1.4.2...v1.4.3) (2025-06-26)
