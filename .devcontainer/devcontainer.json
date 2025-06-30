@@ -1,0 +1,19 @@
+{
+  "name": "React Utils Dev",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "postCreateCommand": "npm ci && npx tsc",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "orta.vscode-jest"
+      ]
+    }
+  },
+  "forwardPorts": [3000],
+  "remoteUser": "node"
+}
