@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/munirmardinli/react-utils/compare/v1.6.0...v1.7.0) (2025-06-30)
+
+
+### Features
+
+* add codesandbox and devcontainer ([4baf664](https://github.com/munirmardinli/react-utils/commit/4baf664e1ec9506f28e7bc2fca055a5193ecab1c))
+
 # [1.6.0](https://github.com/munirmardinli/react-utils/compare/v1.5.0...v1.6.0) (2025-06-30)
 
 
