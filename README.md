@@ -7,6 +7,8 @@ A collection of essential React hooks, state management utilities, and helper fu
 [![TypeScript](https://img.shields.io/badge/lang-typescript-3178C6.svg)](https://www.typescriptlang.org/)
 [![Docs](https://img.shields.io/badge/docs-typedoc-blueviolet.svg)](https://munirmardinli.github.io/react-utils//)
 [![npm](https://img.shields.io/npm/v/@munirmardinli_org/react-utils)](https://www.npmjs.com/package/@munirmardinli_org/react-utils)
+[![codecov](https://codecov.io/gh/munirmardinli/react-utils/branch/main/graph/badge.svg)](https://codecov.io/gh/munirmardinli/react-utils)
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/munirmardinli/react-styled-kit?utm_source=oss&utm_medium=github&utm_campaign=munirmardinli%2Freact-styled-kit&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
 [![GitHub Issues](https://img.shields.io/github/issues/munirmardinli/react-utils)](https://github.com/munirmardinli/react-utils/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/munirmardinli/react-utils)](https://github.com/munirmardinli/react-utils/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/munirmardinli/react-utils)](https://github.com/munirmardinli/react-utils/network/members)
