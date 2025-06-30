@@ -12,10 +12,12 @@ A collection of essential React hooks, state management utilities, and helper fu
 [![GitHub Issues](https://img.shields.io/github/issues/munirmardinli/react-utils)](https://github.com/munirmardinli/react-utils/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/munirmardinli/react-utils)](https://github.com/munirmardinli/react-utils/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/munirmardinli/react-utils)](https://github.com/munirmardinli/react-utils/network/members)
+<a href="https://codesandbox.io/p/github/munirmardinli/react-utils"><img src="https://codesandbox.io/static/img/play-codesandbox.svg" alt="Open in CodeSandbox" height="20" /></a>
 
-<a href="https://www.buymeacoffee.com/munirmardinli" target="_blank">
-  <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=munirmardinli&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" />
-</a>
+<p align="center">
+  <a href="https://www.buymeacoffee.com/munirmardinli" target="_blank"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-yellow?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" /></a>
+  <a href="https://github.com/sponsors/alexandresanlim"><img alt="Sponsor" src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=%23white" /></a>
+</p>
 
 ## ✨ Features
 
