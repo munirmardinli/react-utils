@@ -16,7 +16,7 @@ A collection of essential React hooks, state management utilities, and helper fu
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/munirmardinli" target="_blank"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-yellow?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" /></a>
-  <a href="https://github.com/sponsors/alexandresanlim"><img alt="Sponsor" src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=%23white" /></a>
+  <a href="https://github.com/sponsors/munirmardinli"><img alt="Sponsor" src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=%23white" /></a>
 </p>
 
 ## ✨ Features
