@@ -7,7 +7,7 @@
   "theme": "default",
   "logLevel": "Info",
   "entryPoints": ["src"],
-  "tsconfig": "tsconfig.docs.json",
+  "tsconfig": "config/tsconfig.docs.json",
   "hostedBaseUrl": "https://munirmardinli.github.io/react-utils",
   "titleLink": "https://munirmardinli.github.io/react-utils",
   "gitRevision": "main",
