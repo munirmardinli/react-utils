@@ -1,6 +1,6 @@
 {
   "name": "React Utils Dev",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
   "postCreateCommand": "npm ci && npx tsc",
   "customizations": {
     "vscode": {
