@@ -5442,7 +5442,9 @@
 			"9": "src/stores/selectedLanguageMenuStore.ts",
 			"10": "src/stores/snackbarStore.ts",
 			"11": "src/stores/useCookieStore.ts",
-			"12": "src/types/index.ts"
+			"12": "src/types/index.ts",
+			"13": "README.md",
+			"14": ""
 		},
 		"reflections": {
 			"1": 1,
@@ -5456,7 +5458,9 @@
 			"9": 32,
 			"10": 34,
 			"11": 36,
-			"12": 38
+			"12": 38,
+			"13": 0,
+			"14": 0
 		}
 	}
 }
