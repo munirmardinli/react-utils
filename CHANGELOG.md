@@ -1,3 +1,10 @@
+## [1.8.5](https://github.com/munirmardinli/react-utils/compare/v1.8.4...v1.8.5) (2025-07-01)
+
+
+### Bug Fixes
+
+* fix slug on readme ([7772b47](https://github.com/munirmardinli/react-utils/commit/7772b47ce18b8828e2e4537b28fee1784857ba89))
+
 ## [1.8.4](https://github.com/munirmardinli/react-utils/compare/v1.8.3...v1.8.4) (2025-07-01)
 
 ## [1.8.3](https://github.com/munirmardinli/react-utils/compare/v1.8.2...v1.8.3) (2025-07-01)
