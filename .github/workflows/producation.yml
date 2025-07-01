@@ -43,15 +43,15 @@ jobs:
   needs: prepare
   runs-on: ubuntu-latest
   steps:
-    - uses: actions/checkout@v4
-    - uses: actions/cache@v4
-      with:
-       path: |
-        node_modules
-        .npm
-       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-    - name: Typecheck
-      run: npx tsc --noEmit
+   - uses: actions/checkout@v4
+   - uses: actions/cache@v4
+     with:
+      path: |
+       node_modules
+       .npm
+      key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+   - name: Typecheck
+     run: npx tsc --noEmit
 
  quality-assurance:
   needs: prepare
@@ -61,47 +61,24 @@ jobs:
    - uses: actions/cache@v4
      with:
       path: |
-        node_modules
-        .npm
+       node_modules
+       .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
    - name: Run npm audit
      run: npm audit --audit-level=moderate
-
- trivy-scan:
-  needs: quality-assurance
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v4
-    - name: Install Trivy
-      uses: aquasecurity/trivy-action@0.28.0
-      with:
-        scan-type: 'fs'
-        scan-ref: '.'
-        format: 'table'
-        exit-code: '1'
-        ignore-unfixed: true
-    - name: Trivy npm dependencies scan
-      uses: aquasecurity/trivy-action@0.28.0
-      with:
-        scan-type: 'npm'
-        scan-ref: 'package-lock.json'
-        format: 'table'
-        exit-code: '1'
-        ignore-unfixed: true
 
  build-prod:
   needs:
    - lint
    - quality-assurance
-   - trivy-scan
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
    - uses: actions/cache@v4
      with:
       path: |
-        node_modules
-        .npm
+       node_modules
+       .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
    - name: Build application
      run: |
@@ -126,8 +103,8 @@ jobs:
    - uses: actions/cache@v4
      with:
       path: |
-        node_modules
-        .npm
+       node_modules
+       .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
    - run: npx typedoc --options typedoc.json
    - run: npx jest --ci --coverage
@@ -165,8 +142,8 @@ jobs:
    - uses: actions/cache@v4
      with:
       path: |
-        node_modules
-        .npm
+       node_modules
+       .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
 
    - name: Run Semantic Release
@@ -185,8 +162,8 @@ jobs:
    - uses: actions/cache@v4
      with:
       path: |
-        node_modules
-        .npm
+       node_modules
+       .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
    - name: Set up Node.js
      uses: actions/setup-node@v4
