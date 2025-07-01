@@ -1,3 +1,16 @@
+# [1.8.0](https://github.com/munirmardinli/react-utils/compare/v1.7.0...v1.8.0) (2025-07-01)
+
+
+### Bug Fixes
+
+* bug fix users version ([c580bc3](https://github.com/munirmardinli/react-utils/commit/c580bc3af887035e9426fe88e850a6cc5b7d284c))
+* delete trivy ([47f4455](https://github.com/munirmardinli/react-utils/commit/47f445542f2a11a6957ce8212a7b838973722e4c))
+
+
+### Features
+
+* trivy ([5d8a0b4](https://github.com/munirmardinli/react-utils/commit/5d8a0b4081ce6f93c488a9ad69a7dcc9cfcd23cb))
+
 # [1.7.0](https://github.com/munirmardinli/react-utils/compare/v1.6.0...v1.7.0) (2025-06-30)
 
 
