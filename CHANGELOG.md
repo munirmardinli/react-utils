@@ -1,3 +1,5 @@
+## [1.8.7](https://github.com/munirmardinli/react-utils/compare/v1.8.6...v1.8.7) (2025-07-07)
+
 ## [1.8.6](https://github.com/munirmardinli/react-utils/compare/v1.8.5...v1.8.6) (2025-07-07)
 
 
