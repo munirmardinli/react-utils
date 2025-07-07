@@ -1,3 +1,10 @@
+## [1.8.8](https://github.com/munirmardinli/react-utils/compare/v1.8.7...v1.8.8) (2025-07-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v15.3.5 ([68a303f](https://github.com/munirmardinli/react-utils/commit/68a303fb2e729070eaec26d865b5baf5dae6154d))
+
 ## [1.8.7](https://github.com/munirmardinli/react-utils/compare/v1.8.6...v1.8.7) (2025-07-07)
 
 ## [1.8.6](https://github.com/munirmardinli/react-utils/compare/v1.8.5...v1.8.6) (2025-07-07)
