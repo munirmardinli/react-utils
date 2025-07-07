@@ -1,3 +1,10 @@
+## [1.8.6](https://github.com/munirmardinli/react-utils/compare/v1.8.5...v1.8.6) (2025-07-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency dotenv to v17.0.1 ([8c72898](https://github.com/munirmardinli/react-utils/commit/8c728989349b03fecd5c54801dfc49505f5975f0))
+
 ## [1.8.5](https://github.com/munirmardinli/react-utils/compare/v1.8.4...v1.8.5) (2025-07-01)
 
 
